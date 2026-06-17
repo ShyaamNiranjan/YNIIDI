@@ -2,7 +2,7 @@
 
 **You Name It, I'll Do It.**
 
-YNIIDI is a software company founded by Shyaam Niranjan. BOOM is the first product under YNIIDI.
+YNIIDI develops software products that help businesses streamline operations, improve visibility, and reduce dependency on disconnected spreadsheets and manual processes.
 
 - Company site: https://shyaamniranjan.github.io/YNIIDI/
 - BOOM product: https://boom.yniidi.com/

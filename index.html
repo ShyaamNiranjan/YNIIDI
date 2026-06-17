@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="YNIIDI — You Name It, I'll Do It. A software company building practical business products. Founded by Shyaam Niranjan. BOOM is our unified business operations platform.">
+  <meta name="description" content="YNIIDI develops software products that help businesses streamline operations, improve visibility, and reduce dependency on disconnected spreadsheets and manual processes.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Shyaam Niranjan">
-  <meta name="keywords" content="YNIIDI, You Name It I'll Do It, Shyaam Niranjan, software company, business software, BOOM, business operations platform">
+  <meta name="keywords" content="YNIIDI, You Name It I'll Do It, business operations software, BOOM, distribution software, wholesale software, manufacturing software, import export software">
   <meta name="theme-color" content="#0b1220">
   <link rel="canonical" href="https://shyaamniranjan.github.io/YNIIDI/">
-  <meta property="og:title" content="YNIIDI | You Name It, I'll Do It">
-  <meta property="og:description" content="YNIIDI builds focused software products for real business operations. Explore BOOM, our unified business operations platform.">
+  <meta property="og:title" content="YNIIDI | Building Software That Powers Business Operations">
+  <meta property="og:description" content="YNIIDI develops software products that help businesses streamline operations, improve visibility, and reduce dependency on disconnected spreadsheets and manual processes.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://shyaamniranjan.github.io/YNIIDI/">
   <meta property="og:site_name" content="YNIIDI">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="YNIIDI | You Name It, I'll Do It">
-  <meta name="twitter:description" content="A software company building practical business products. BOOM is our first product.">
-  <title>YNIIDI | You Name It, I'll Do It</title>
+  <meta name="twitter:title" content="YNIIDI | Building Software That Powers Business Operations">
+  <meta name="twitter:description" content="Software products for operational businesses. Explore BOOM and the growing YNIIDI ecosystem.">
+  <title>YNIIDI | Building Software That Powers Business Operations</title>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,10 +28,11 @@
         "name": "YNIIDI",
         "alternateName": "You Name It, I'll Do It",
         "url": "https://shyaamniranjan.github.io/YNIIDI/",
-        "description": "YNIIDI is a software company that builds practical products for business operations.",
+        "description": "YNIIDI is a software product company focused on developing solutions for operational businesses.",
         "founder": {
           "@type": "Person",
-          "name": "Shyaam Niranjan"
+          "name": "Shyaam Niranjan",
+          "jobTitle": "Founder"
         },
         "sameAs": [
           "https://github.com/ShyaamNiranjan/YNIIDI",
@@ -50,10 +51,11 @@
       {
         "@type": "SoftwareApplication",
         "name": "BOOM",
+        "alternateName": "Business Operations Management Platform",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web browser",
         "url": "https://boom.yniidi.com/",
-        "description": "BOOM is a unified business operations platform for inventory, billing, suppliers, workflows, and team coordination.",
+        "description": "BOOM is a self-hosted business management platform for distributors, wholesalers, manufacturers, and import-export businesses.",
         "publisher": {
           "@id": "https://shyaamniranjan.github.io/YNIIDI/#organization"
         }
@@ -64,16 +66,15 @@
   <style>
     :root {
       --bg: #f4f7fb;
+      --bg-muted: #eef3f9;
       --bg-dark: #0b1220;
       --surface: #ffffff;
-      --surface-muted: #eef3f9;
       --text: #0f172a;
       --text-muted: #5b6b82;
       --line: #d8e1ec;
       --accent: #1d4ed8;
       --accent-dark: #1e3a8a;
       --accent-soft: #dbeafe;
-      --success: #0f766e;
       --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
       --radius: 18px;
       --radius-sm: 12px;
@@ -87,7 +88,7 @@
       font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       color: var(--text);
       background: var(--bg);
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     a { color: inherit; text-decoration: none; }
@@ -103,7 +104,7 @@
       top: 0;
       z-index: 20;
       backdrop-filter: blur(14px);
-      background: rgba(244, 247, 251, 0.88);
+      background: rgba(244, 247, 251, 0.9);
       border-bottom: 1px solid rgba(216, 225, 236, 0.9);
     }
 
@@ -115,19 +116,14 @@
       min-height: 72px;
     }
 
-    .brand {
-      display: flex;
-      flex-direction: column;
-      gap: 0.1rem;
-    }
-
     .brand strong {
-      font-size: 1.15rem;
+      display: block;
+      font-size: 1.12rem;
       letter-spacing: 0.14em;
     }
 
     .brand span {
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       color: var(--text-muted);
     }
 
@@ -188,122 +184,21 @@
       color: var(--text);
     }
 
-    .hero {
-      padding: 5.5rem 0 4.5rem;
+    .btn-text {
+      padding: 0;
+      border-radius: 0;
+      font-weight: 600;
+      color: var(--accent-dark);
     }
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 2.5rem;
-      align-items: center;
-    }
+    .btn-text:hover { transform: none; text-decoration: underline; }
 
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.45rem 0.8rem;
-      border-radius: 999px;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      color: var(--text-muted);
-      font-size: 0.82rem;
-      margin-bottom: 1rem;
-    }
+    section { padding: 4.5rem 0; }
 
-    h1 {
-      margin: 0 0 1rem;
-      font-size: clamp(2.4rem, 5vw, 4rem);
-      line-height: 1.05;
-      letter-spacing: -0.03em;
-    }
-
-    .hero-copy {
-      font-size: 1.08rem;
-      color: var(--text-muted);
-      max-width: 38rem;
-      margin-bottom: 1.6rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-bottom: 2rem;
-    }
-
-    .hero-points {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.8rem;
-    }
-
-    .hero-points div {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius-sm);
-      padding: 1rem;
-    }
-
-    .hero-points strong {
-      display: block;
-      margin-bottom: 0.25rem;
-      font-size: 0.95rem;
-    }
-
-    .hero-points span {
-      color: var(--text-muted);
-      font-size: 0.88rem;
-    }
-
-    .hero-panel {
-      background: linear-gradient(180deg, #0f172a, #172554);
-      color: #e2e8f0;
-      border-radius: calc(var(--radius) + 6px);
-      padding: 1.6rem;
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-panel::after {
-      content: "";
-      position: absolute;
-      inset: auto -20% -30% auto;
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(59, 130, 246, 0.35), transparent 70%);
-    }
-
-    .hero-panel h2 {
-      margin: 0 0 0.75rem;
-      font-size: 1.35rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-panel p,
-    .hero-panel li {
-      position: relative;
-      z-index: 1;
-      color: #cbd5e1;
-    }
-
-    .hero-panel ul {
-      margin: 0;
-      padding-left: 1.1rem;
-    }
-
-    .hero-panel li + li { margin-top: 0.55rem; }
-
-    section {
-      padding: 4.5rem 0;
-    }
+    .section-muted { background: var(--bg-muted); }
 
     .section-head {
-      max-width: 42rem;
+      max-width: 44rem;
       margin-bottom: 2rem;
     }
 
@@ -311,23 +206,53 @@
       margin: 0 0 0.75rem;
       font-size: clamp(1.8rem, 3vw, 2.5rem);
       letter-spacing: -0.02em;
+      line-height: 1.15;
     }
 
-    .section-head p {
+    .section-head p,
+    .lead {
       margin: 0;
       color: var(--text-muted);
       font-size: 1.02rem;
     }
 
-    .about-grid,
-    .values-grid,
-    .founder-grid {
+    .lead + .lead { margin-top: 1rem; }
+
+    .hero {
+      padding: 5.5rem 0 4.5rem;
+    }
+
+    .hero h1 {
+      margin: 0 0 1rem;
+      max-width: 14ch;
+      font-size: clamp(2.3rem, 5vw, 3.8rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-copy {
+      max-width: 42rem;
+      margin-bottom: 1.6rem;
+      color: var(--text-muted);
+      font-size: 1.08rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
       display: grid;
       gap: 1rem;
     }
 
-    .about-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
     .card {
       background: var(--surface);
@@ -348,111 +273,120 @@
       font-size: 0.96rem;
     }
 
-    .products-wrap {
-      display: grid;
-      gap: 1.2rem;
-    }
-
     .product-card {
       display: grid;
       grid-template-columns: auto 1fr auto;
       gap: 1.4rem;
       align-items: center;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: calc(var(--radius) + 4px);
-      padding: 1.5rem;
-      box-shadow: var(--shadow);
     }
 
     .product-logo {
       width: 84px;
       height: 84px;
       border-radius: 20px;
-      background: var(--surface-muted);
+      background: var(--bg-muted);
       border: 1px solid var(--line);
       padding: 0.75rem;
       object-fit: contain;
     }
 
-    .product-meta h3 {
-      margin: 0 0 0.35rem;
-      font-size: 1.35rem;
-    }
-
-    .product-tag {
+    .product-tag,
+    .status-pill {
       display: inline-block;
-      margin-bottom: 0.65rem;
+      margin-bottom: 0.55rem;
       padding: 0.25rem 0.6rem;
       border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent-dark);
       font-size: 0.78rem;
       font-weight: 600;
       letter-spacing: 0.04em;
       text-transform: uppercase;
     }
 
-    .product-meta p {
-      margin: 0;
+    .product-tag {
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+    }
+
+    .status-pill {
+      background: #ecfeff;
+      color: #0f766e;
+      border: 1px solid #99f6e4;
+    }
+
+    .product-card h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1.35rem;
+    }
+
+    .product-card .subtitle {
+      margin: 0 0 0.75rem;
       color: var(--text-muted);
-      max-width: 44rem;
+      font-size: 0.95rem;
+      font-weight: 600;
     }
 
-    .product-features {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 0.9rem;
-    }
-
-    .product-features span {
-      padding: 0.35rem 0.65rem;
-      border-radius: 999px;
-      background: var(--surface-muted);
-      border: 1px solid var(--line);
-      font-size: 0.82rem;
-      color: var(--text-muted);
-    }
-
-    .coming-soon {
-      border-style: dashed;
-      background: linear-gradient(180deg, #ffffff, #f8fafc);
+    .coming-card {
       text-align: center;
-      padding: 2rem;
+      border-style: dashed;
     }
 
-    .coming-soon p {
+    .vision-panel {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: #e2e8f0;
+      border-radius: calc(var(--radius) + 6px);
+      padding: 2.2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .vision-panel h2 {
+      margin: 0 0 0.85rem;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+    }
+
+    .vision-panel p {
       margin: 0;
-      color: var(--text-muted);
+      color: #cbd5e1;
+      max-width: 52rem;
+      font-size: 1.02rem;
     }
 
     .founder-grid {
-      grid-template-columns: 0.9fr 1.1fr;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 1rem;
+      align-items: start;
     }
 
-    .founder-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.45rem 0.75rem;
+    .founder-label {
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      padding: 0.35rem 0.7rem;
       border-radius: 999px;
-      background: var(--surface-muted);
+      background: var(--bg-muted);
       border: 1px solid var(--line);
       color: var(--text-muted);
-      font-size: 0.82rem;
-      margin-bottom: 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
 
     .founder-card h3 {
-      margin: 0 0 0.5rem;
-      font-size: 1.8rem;
+      margin: 0 0 0.35rem;
+      font-size: 1.9rem;
     }
 
-    .founder-card p {
+    .founder-role {
       margin: 0 0 1rem;
       color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .founder-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.2rem;
     }
 
     .contact-panel {
@@ -476,7 +410,25 @@
     .contact-panel p {
       margin: 0;
       color: #cbd5e1;
-      max-width: 34rem;
+      max-width: 38rem;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .contact-links {
+      display: grid;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+    }
+
+    .contact-links a {
+      color: #cbd5e1;
+      text-decoration: underline;
+      text-underline-offset: 0.18em;
     }
 
     .site-footer {
@@ -512,23 +464,17 @@
     }
 
     @media (max-width: 900px) {
-      .hero-grid,
-      .about-grid,
+      .grid-2,
+      .grid-3,
+      .grid-4,
       .founder-grid,
       .product-card {
         grid-template-columns: 1fr;
       }
 
-      .hero-points {
-        grid-template-columns: 1fr;
-      }
-
-      .values-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .product-card .btn {
-        width: 100%;
+      .product-card .btn,
+      .product-card .btn-text {
+        justify-self: start;
       }
 
       .nav-links {
@@ -547,7 +493,6 @@
       }
 
       .nav-links.open { display: flex; }
-
       .menu-button { display: inline-flex; }
     }
   </style>
@@ -555,170 +500,238 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="#top" aria-label="YNIIDI home">
+      <a class="brand" href="#home" aria-label="YNIIDI home">
         <strong>YNIIDI</strong>
         <span>You Name It, I'll Do It</span>
       </a>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>Menu</button>
       <nav class="nav-links" id="site-nav" aria-label="Primary">
-        <a href="#about">About</a>
+        <a href="#home">Home</a>
         <a href="#products">Products</a>
-        <a href="#founder">Founder</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="reveal">
-          <div class="eyebrow">Software company · Practical products · Built to last</div>
-          <h1>You name it.<br>We'll build it.</h1>
-          <p class="hero-copy">
-            YNIIDI is a software company focused on building clear, dependable products for real business operations.
-            We design software that teams can understand, adopt, and scale — without unnecessary complexity.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#products">Explore products</a>
-            <a class="btn btn-secondary" href="#about">About YNIIDI</a>
-          </div>
-          <div class="hero-points">
-            <div>
-              <strong>Product-first</strong>
-              <span>Every release solves a real operational problem.</span>
-            </div>
-            <div>
-              <strong>Built for teams</strong>
-              <span>Software designed for daily use across growing companies.</span>
-            </div>
-            <div>
-              <strong>More to come</strong>
-              <span>BOOM is live today. Additional products are on the way.</span>
-            </div>
-          </div>
-        </div>
-        <aside class="hero-panel reveal">
-          <h2>What YNIIDI stands for</h2>
-          <p><strong>YNIIDI</strong> means <strong>You Name It, I'll Do It.</strong></p>
-          <ul>
-            <li>We listen to the problem before prescribing the product.</li>
-            <li>We build software with clarity, ownership, and long-term value.</li>
-            <li>We ship focused products instead of bloated platforms.</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>About YNIIDI</h2>
-          <p>
-            YNIIDI is the company behind BOOM and future business software products.
-            Our work is centered on helping companies run operations with less friction, better visibility, and software they can own.
-          </p>
-        </div>
-        <div class="about-grid">
-          <article class="card reveal">
-            <h3>Our mission</h3>
-            <p>Build software that makes business operations simpler, more connected, and easier to scale.</p>
-          </article>
-          <article class="card reveal">
-            <h3>Our approach</h3>
-            <p>Start with the workflow, design for clarity, and deliver products that teams can rely on every day.</p>
-          </article>
-          <article class="card reveal">
-            <h3>Our direction</h3>
-            <p>BOOM is our first product. YNIIDI will continue expanding into more focused software for modern businesses.</p>
-          </article>
-        </div>
-        <div class="values-grid" style="margin-top: 1rem;">
-          <article class="card reveal">
-            <h3>Clarity over hype</h3>
-            <p>We avoid buzzwords and build products that are easy to explain, easy to use, and easy to recommend.</p>
-          </article>
-          <article class="card reveal">
-            <h3>Ownership matters</h3>
-            <p>Where it fits the product, we prioritize customer ownership, customization, and deployment flexibility.</p>
-          </article>
+  <main>
+    <section class="hero" id="home">
+      <div class="container reveal">
+        <h1>Building Software That Powers Business Operations</h1>
+        <p class="hero-copy">
+          YNIIDI develops software products that help businesses streamline operations, improve visibility,
+          and reduce dependency on disconnected spreadsheets and manual processes.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products">Explore Products</a>
+          <a class="btn btn-secondary" href="#contact">Contact Us</a>
         </div>
       </div>
     </section>
 
-    <section id="products" style="background: var(--surface-muted);">
+    <section class="section-muted" id="introduction">
       <div class="container">
         <div class="section-head reveal">
-          <h2>Products</h2>
-          <p>
-            YNIIDI builds focused software for business operations.
-            BOOM is our first product. More are in development.
+          <h2>Software Built for Real-World Operations</h2>
+          <p class="lead">
+            Modern businesses generate enormous amounts of operational data, yet many still rely on spreadsheets,
+            fragmented tools, and manual workflows to manage critical processes.
+          </p>
+          <p class="lead">
+            At YNIIDI, we build software products that bring operations, inventory, purchasing, customers, suppliers,
+            and business workflows into a unified digital ecosystem.
+          </p>
+          <p class="lead">
+            Our focus is simple: create software that is practical, reliable, and adaptable to the way businesses actually work.
           </p>
         </div>
-        <div class="products-wrap">
-          <article class="product-card reveal">
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Our Products</h2>
+        </div>
+        <div class="grid-2">
+          <article class="card product-card reveal">
             <img class="product-logo" src="assets/boom-logo.png" alt="BOOM logo" width="84" height="84">
-            <div class="product-meta">
+            <div>
               <span class="product-tag">Live product</span>
               <h3>BOOM</h3>
+              <p class="subtitle">Business Operations Management Platform</p>
               <p>
-                BOOM is a unified business operations platform that helps companies manage inventory, billing,
-                suppliers, workflows, and team coordination in one system. It replaces spreadsheets, disconnected tools,
-                and manual processes with a scalable platform teams can run on their own infrastructure.
+                BOOM is a self-hosted business management platform designed for distributors, wholesalers,
+                manufacturers, and import-export businesses. It centralizes inventory, orders, purchases,
+                customers, suppliers, billing, payments, and workflow management into a single connected system.
               </p>
-              <div class="product-features">
-                <span>Inventory management</span>
-                <span>Billing & invoicing</span>
-                <span>Supplier management</span>
-                <span>Workflow coordination</span>
-                <span>Customer & supplier portals</span>
-                <span>Self-hosted ownership</span>
-              </div>
+              <a class="btn btn-text" href="https://boom.yniidi.com/" target="_blank" rel="noopener noreferrer">Learn More &rarr;</a>
             </div>
             <a class="btn btn-primary" href="https://boom.yniidi.com/" target="_blank" rel="noopener noreferrer">Visit BOOM</a>
           </article>
-          <article class="card coming-soon reveal">
-            <h3>More products coming</h3>
-            <p>YNIIDI is actively building additional software products. New releases will be added here as they become available.</p>
+          <article class="card coming-card reveal">
+            <span class="status-pill">Coming Soon</span>
+            <h3>Future Products</h3>
+            <p>
+              Additional software products are currently under development as part of the YNIIDI ecosystem.
+            </p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-muted" id="why-yniidi">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Why Businesses Choose YNIIDI</h2>
+        </div>
+        <div class="grid-2">
+          <article class="card reveal">
+            <h3>Practical Solutions</h3>
+            <p>Every product is designed around real operational challenges rather than theoretical workflows.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Business-Centric Design</h3>
+            <p>Software should adapt to businesses—not force businesses to adapt to software.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Ownership &amp; Control</h3>
+            <p>Our solutions prioritize transparency, flexibility, and control over business data.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Scalable Architecture</h3>
+            <p>Built to support growing organizations and evolving operational requirements.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="industries">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Industries We Serve</h2>
+        </div>
+        <div class="grid-4">
+          <article class="card reveal">
+            <h3>Distribution</h3>
+            <p>Manage inventory, orders, suppliers, and customers from a centralized platform.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Wholesale</h3>
+            <p>Gain visibility across inventory movement, sales activities, and operational workflows.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Manufacturing</h3>
+            <p>Connect purchasing, inventory, production-related operations, and business processes.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Import &amp; Export</h3>
+            <p>Track orders, inventory, supplier relationships, and business activities with greater clarity.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-muted" id="vision">
+      <div class="container">
+        <div class="vision-panel reveal">
+          <h2>Our Vision</h2>
+          <p>
+            We envision a future where businesses operate through connected systems rather than disconnected spreadsheets.
+            By building practical and adaptable software products, we aim to help organizations make faster decisions,
+            improve operational visibility, and scale with confidence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="values">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>What Drives Us</h2>
+        </div>
+        <div class="grid-2">
+          <article class="card reveal">
+            <h3>Simplicity</h3>
+            <p>Complex business processes deserve clear and intuitive software.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Reliability</h3>
+            <p>Software should become an asset businesses can depend on every day.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Transparency</h3>
+            <p>Organizations should maintain visibility and control over their operations and data.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Continuous Improvement</h3>
+            <p>Great products evolve alongside the businesses that use them.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-muted" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>About Us</h2>
+          <p class="lead">
+            YNIIDI is a software product company focused on developing solutions for operational businesses.
+          </p>
+          <p class="lead">
+            Our mission is to create software that simplifies complex business processes while providing organizations
+            with greater visibility, efficiency, and control.
+          </p>
+          <p class="lead">
+            Starting with business operations management, we are building a growing ecosystem of software products
+            designed to solve practical business challenges.
+          </p>
         </div>
       </div>
     </section>
 
     <section id="founder">
       <div class="container founder-grid">
-        <div class="founder-card card reveal">
-          <div class="founder-badge">Founder</div>
+        <article class="card founder-card reveal">
+          <span class="founder-label">Founder</span>
           <h3>Shyaam Niranjan</h3>
+          <p class="founder-role">Founder of YNIIDI and creator of BOOM.</p>
           <p>
-            Shyaam Niranjan founded YNIIDI to build practical software products for businesses that need better systems,
-            not more complexity. BOOM is the first product under the YNIIDI company.
+            Driven by a passion for building practical software solutions, Shyaam focuses on developing products that
+            help businesses simplify operations, improve visibility, and move beyond fragmented workflows.
           </p>
-          <a class="btn btn-secondary" href="https://github.com/ShyaamNiranjan" target="_blank" rel="noopener noreferrer">View GitHub</a>
-        </div>
+          <div class="founder-links">
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/shyaamniranjan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-secondary" href="https://github.com/ShyaamNiranjan" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
         <article class="card reveal">
-          <h3>Why YNIIDI exists</h3>
+          <h3>Building the YNIIDI ecosystem</h3>
           <p>
-            Many businesses are forced to stitch together spreadsheets, disconnected apps, and manual follow-ups just to stay operational.
-            YNIIDI exists to build focused software that brings those workflows together — starting with BOOM, and expanding from there.
+            YNIIDI began with a clear belief: operational businesses deserve software that reflects how they actually work.
+            BOOM is the first product in that vision, with more focused solutions planned for the future.
           </p>
         </article>
       </div>
     </section>
 
-    <section id="contact">
+    <section class="section-muted" id="contact">
       <div class="container">
         <div class="contact-panel reveal">
           <div>
-            <h2>Work with YNIIDI</h2>
+            <h2>Ready to Explore YNIIDI Products?</h2>
             <p>
-              Interested in BOOM, future YNIIDI products, or a custom software conversation?
-              Explore BOOM today or connect through our GitHub presence.
+              Discover software designed to simplify operations, improve visibility, and support business growth.
             </p>
+            <div class="contact-links">
+              <a href="https://github.com/ShyaamNiranjan" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/shyaamniranjan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://boom.yniidi.com/" target="_blank" rel="noopener noreferrer">BOOM product site</a>
+            </div>
           </div>
-          <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
-            <a class="btn btn-primary" href="https://boom.yniidi.com/" target="_blank" rel="noopener noreferrer">Go to BOOM</a>
-            <a class="btn btn-secondary" href="https://github.com/ShyaamNiranjan/YNIIDI" target="_blank" rel="noopener noreferrer">YNIIDI on GitHub</a>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="#products">Explore Products</a>
+            <a class="btn btn-secondary" href="https://github.com/ShyaamNiranjan" target="_blank" rel="noopener noreferrer">Contact Us</a>
           </div>
         </div>
       </div>
@@ -728,13 +741,15 @@
   <footer class="site-footer">
     <div class="container footer-row">
       <div>
-        <strong>YNIIDI</strong> · You Name It, I'll Do It<br>
-        Founded by Shyaam Niranjan
+        <strong>YNIIDI</strong><br>
+        Building software for modern business operations.
       </div>
       <div class="footer-links">
+        <a href="#home">Home</a>
         <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
         <a href="https://boom.yniidi.com/" target="_blank" rel="noopener noreferrer">BOOM</a>
-        <a href="https://github.com/ShyaamNiranjan/YNIIDI" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
   </footer>
@@ -765,8 +780,13 @@
 
     document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
 
-    const sections = [...document.querySelectorAll("section[id]")];
     const navAnchors = [...document.querySelectorAll(".nav-links a")];
+    const sectionMap = {
+      home: document.querySelector("#home"),
+      products: document.querySelector("#products"),
+      about: document.querySelector("#about"),
+      contact: document.querySelector("#contact")
+    };
 
     const setActiveNav = (id) => {
       navAnchors.forEach((link) => {
@@ -781,10 +801,29 @@
       const visible = entries
         .filter((entry) => entry.isIntersecting)
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (visible) setActiveNav(visible.target.id);
+      if (!visible) return;
+
+      const id = visible.target.id;
+      if (["home", "products", "about", "contact"].includes(id)) {
+        setActiveNav(id);
+        return;
+      }
+
+      if (id === "introduction" || id === "why-yniidi" || id === "industries" || id === "vision" || id === "values" || id === "founder") {
+        if (id === "founder") setActiveNav("about");
+        else if (id === "introduction") setActiveNav("home");
+        else setActiveNav("products");
+      }
     }, { rootMargin: "-30% 0px -55% 0px", threshold: [0.2, 0.45, 0.7] });
 
-    sections.forEach((section) => activeObserver.observe(section));
+    Object.values(sectionMap).forEach((section) => {
+      if (section) activeObserver.observe(section);
+    });
+
+    ["introduction", "why-yniidi", "industries", "vision", "values", "founder"].forEach((id) => {
+      const section = document.querySelector(`#${id}`);
+      if (section) activeObserver.observe(section);
+    });
   </script>
 </body>
 </html>
