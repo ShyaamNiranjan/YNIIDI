@@ -732,12 +732,66 @@ section { padding: 5.5rem 0; }
 }
 .industry-panel.helps li::before { background: var(--accent); }
 
+/* Innovation page */
+.focus-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem;
+}
+.focus-card {
+  padding: 2rem; border-radius: var(--radius-lg);
+  background: var(--bg-elevated); border: 1px solid var(--line);
+  box-shadow: var(--shadow); height: 100%;
+}
+.focus-card h3 {
+  margin: 0 0 0.75rem; font-family: var(--font-display);
+  font-size: 1.2rem; font-weight: 800; letter-spacing: -0.02em;
+}
+.focus-card > p {
+  margin: 0 0 0.85rem; color: var(--muted); line-height: 1.7; font-size: 0.96rem;
+}
+.focus-card > p:last-of-type { margin-bottom: 1.25rem; }
+.focus-card h4 {
+  margin: 0 0 0.65rem; font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent);
+}
+.focus-card-wide { grid-column: 1 / -1; }
+.trend-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+}
+.trend-card {
+  padding: 1.75rem; border-radius: var(--radius);
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.25s, border-color 0.25s;
+}
+.trend-card:hover {
+  transform: translateY(-3px); border-color: rgba(99,102,241,0.25);
+}
+.trend-card h3 {
+  margin: 0 0 0.5rem; font-family: var(--font-display);
+  font-size: 1.05rem; font-weight: 700; color: #fff;
+}
+.trend-card p { margin: 0; font-size: 0.92rem; color: rgba(255,255,255,0.52); line-height: 1.65; }
+.responsibility-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+}
+.responsibility-card {
+  padding: 1.75rem; border-radius: var(--radius);
+  background: var(--bg-elevated); border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+}
+.responsibility-card h3 {
+  margin: 0 0 0.45rem; font-family: var(--font-display);
+  font-size: 1rem; font-weight: 700;
+}
+.responsibility-card p { margin: 0; font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+
 @media (max-width: 1024px) {
   .process-grid, .challenge-grid { grid-template-columns: 1fr 1fr; }
   .product-block-body { grid-template-columns: 1fr; }
   .roadmap-explore { grid-template-columns: 1fr 1fr; }
   .philosophy-grid { grid-template-columns: repeat(2, 1fr); }
   .industry-deep-grid { grid-template-columns: 1fr; }
+  .trend-grid { grid-template-columns: repeat(2, 1fr); }
+  .responsibility-grid { grid-template-columns: repeat(2, 1fr); }
   .flow-step:not(:last-child)::after { content: "↓"; right: auto; top: auto; bottom: -0.5rem; left: 50%; transform: translateX(-50%); }
   .flow-chain { flex-direction: column; align-items: center; }
   .flow-step { width: 100%; max-width: 280px; }
@@ -747,7 +801,7 @@ section { padding: 5.5rem 0; }
 @media (max-width: 768px) {
   section { padding: 4rem 0; }
   .problem-grid, .grid-2, .grid-4, .innovation-split, .eco-flagship { grid-template-columns: 1fr; }
-  .philosophy-grid, .roadmap-explore, .outcome-grid { grid-template-columns: 1fr; }
+  .philosophy-grid, .roadmap-explore, .outcome-grid, .focus-grid, .trend-grid, .responsibility-grid { grid-template-columns: 1fr; }
   .process-grid, .challenge-grid { grid-template-columns: 1fr; }
   .capability-list { grid-template-columns: 1fr; }
   .product-block-header, .product-block-body { padding-left: 1.5rem; padding-right: 1.5rem; }
