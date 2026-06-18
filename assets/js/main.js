@@ -49,6 +49,7 @@
       else if (page === "industries") active = normalized === "industries" || href === "./";
       else if (page === "innovation") active = normalized === "innovation" || href === "./";
       else if (page === "about") active = normalized === "about" || href === "./";
+      else if (page === "vision") active = normalized === "vision" || href === "./";
       else if (page === "contact") active = normalized === "contact" || href === "./";
       link.classList.toggle("active", active);
       if (active) link.setAttribute("aria-current", "page");

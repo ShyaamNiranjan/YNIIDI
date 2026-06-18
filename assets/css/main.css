@@ -784,6 +784,27 @@ section { padding: 5.5rem 0; }
 }
 .responsibility-card p { margin: 0; font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
 
+/* Vision page */
+.vision-shift-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-top: 1.5rem;
+}
+.vision-shift-grid span {
+  padding: 1.1rem 1rem; border-radius: var(--radius); text-align: center;
+  background: var(--bg-elevated); border: 1px solid var(--line);
+  font-family: var(--font-display); font-weight: 700; font-size: 0.95rem;
+  color: var(--ink-soft); line-height: 1.35;
+}
+.problem-list-dark li {
+  background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.62);
+}
+.problem-list-dark li::before { color: #818cf8; }
+.pillar-num {
+  font-family: var(--font-display); font-size: 0.78rem; font-weight: 800;
+  letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.75rem;
+}
+.pillar-card { border-top-color: #6366f1; }
+
 @media (max-width: 1024px) {
   .process-grid, .challenge-grid { grid-template-columns: 1fr 1fr; }
   .product-block-body { grid-template-columns: 1fr; }
@@ -792,6 +813,7 @@ section { padding: 5.5rem 0; }
   .industry-deep-grid { grid-template-columns: 1fr; }
   .trend-grid { grid-template-columns: repeat(2, 1fr); }
   .responsibility-grid { grid-template-columns: repeat(2, 1fr); }
+  .vision-shift-grid { grid-template-columns: repeat(2, 1fr); }
   .flow-step:not(:last-child)::after { content: "↓"; right: auto; top: auto; bottom: -0.5rem; left: 50%; transform: translateX(-50%); }
   .flow-chain { flex-direction: column; align-items: center; }
   .flow-step { width: 100%; max-width: 280px; }
@@ -801,7 +823,7 @@ section { padding: 5.5rem 0; }
 @media (max-width: 768px) {
   section { padding: 4rem 0; }
   .problem-grid, .grid-2, .grid-4, .innovation-split, .eco-flagship { grid-template-columns: 1fr; }
-  .philosophy-grid, .roadmap-explore, .outcome-grid, .focus-grid, .trend-grid, .responsibility-grid { grid-template-columns: 1fr; }
+  .philosophy-grid, .roadmap-explore, .outcome-grid, .focus-grid, .trend-grid, .responsibility-grid, .vision-shift-grid { grid-template-columns: 1fr; }
   .process-grid, .challenge-grid { grid-template-columns: 1fr; }
   .capability-list { grid-template-columns: 1fr; }
   .product-block-header, .product-block-body { padding-left: 1.5rem; padding-right: 1.5rem; }
