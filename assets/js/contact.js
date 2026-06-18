@@ -1,8 +1,5 @@
 (() => {
-  const params = new URLSearchParams(window.location.search);
-  const success = document.getElementById("form-success");
   const form = document.getElementById("yniidi-contact-form");
-
   if (!form) return;
 
   const nextInput = document.getElementById("form-next");
@@ -10,13 +7,22 @@
   const subjectInput = document.getElementById("form-email-subject");
   const emailInput = document.getElementById("email");
   const topicSelect = document.getElementById("subject");
-  const submitButton = form.querySelector('button[type="submit"]");
+  const submitButton = form.querySelector('button[type="submit"]');
+
+  const getThankYouUrl = () => {
+    const path = window.location.pathname.replace(/\/contact\/?.*$/, "");
+    const root = path.endsWith("/") ? path : `${path}/`;
+    return `${window.location.origin}${root}thank-you/`;
+  };
 
   if (nextInput) {
-    nextInput.value = `${window.location.origin}${window.location.pathname}?sent=1`;
+    nextInput.value = getThankYouUrl();
   }
 
   form.addEventListener("submit", () => {
+    if (nextInput) {
+      nextInput.value = getThankYouUrl();
+    }
     if (replyInput && emailInput) {
       replyInput.value = emailInput.value.trim();
     }
@@ -28,11 +34,4 @@
       submitButton.textContent = "Sending...";
     }
   });
-
-  if (params.get("sent") === "1" && success) {
-    form.hidden = true;
-    success.hidden = false;
-    const section = document.getElementById("contact-form");
-    if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
 })();
