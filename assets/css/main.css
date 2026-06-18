@@ -73,21 +73,32 @@ button { font: inherit; cursor: pointer; }
 .site-header.scrolled .menu-button,
 .site-header.light .menu-button { border-color: var(--line-strong); color: var(--ink); background: var(--bg-elevated); }
 
-.nav {
+.site-header .container.nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: flex-start;
+  gap: clamp(1.25rem, 2.5vw, 2rem);
   min-height: 112px;
+  width: 100%;
+  max-width: min(1440px, 100%);
+  margin-inline: auto;
+  padding-inline: clamp(0.75rem, 2.2vw, 1.35rem) var(--gutter);
 }
-.brand { display: flex; align-items: center; gap: 0.15rem; min-width: 0; flex-shrink: 0; }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  min-width: 0;
+  flex-shrink: 0;
+  margin-left: -0.15rem;
+}
 .brand-mark-img {
   display: block;
   height: 94px;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
-  margin-right: -0.15rem;
+  margin-right: -0.2rem;
 }
 .brand-name {
   display: block;
@@ -116,7 +127,7 @@ button { font: inherit; cursor: pointer; }
 /* legacy - unused */
 .brand-tag { display: none; }
 
-.nav-links { display: flex; align-items: center; gap: 0.2rem; }
+.nav-links { display: flex; align-items: center; gap: 0.2rem; margin-left: auto; }
 .nav-links a {
   padding: 0.55rem 0.95rem; border-radius: 999px;
   font-size: 0.9rem; font-weight: 500; color: rgba(255,255,255,0.72);
@@ -1038,6 +1049,11 @@ section { padding: 5.5rem 0; }
 
 /* Tablet & below — mobile navigation */
 @media (max-width: 1200px) {
+  .site-header .container.nav {
+    max-width: none;
+    padding-inline: var(--gutter);
+  }
+  .brand { margin-left: 0; }
   .brand-mark-img { height: 79px; }
   .brand-name { font-size: 2rem; letter-spacing: 0.12em; }
   .nav { min-height: 96px; }
