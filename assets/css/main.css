@@ -80,10 +80,10 @@ button { font: inherit; cursor: pointer; }
   gap: 1rem;
   min-height: 112px;
 }
-.brand { display: flex; align-items: center; gap: 0.85rem; min-width: 0; flex-shrink: 0; }
+.brand { display: flex; align-items: center; gap: 0.45rem; min-width: 0; flex-shrink: 0; }
 .brand-mark-img {
   display: block;
-  height: 104px;
+  height: 94px;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
@@ -1037,7 +1037,7 @@ section { padding: 5.5rem 0; }
 
 /* Tablet & below — mobile navigation */
 @media (max-width: 1200px) {
-  .brand-mark-img { height: 88px; }
+  .brand-mark-img { height: 79px; }
   .brand-name { font-size: 2rem; letter-spacing: 0.12em; }
   .nav { min-height: 96px; }
   .menu-button { display: inline-flex; }
