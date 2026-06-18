@@ -39,11 +39,17 @@
 
   const page = document.body.dataset.page;
   if (page) {
-    document.querySelectorAll(".nav-links a").forEach((link) => {
+    document.querySelectorAll(".nav-links a:not(.nav-cta)").forEach((link) => {
       const href = link.getAttribute("href") || "";
-      const active = href.includes(page) || (page === "home" && (href === "./" || href === "index.html" || href.endsWith("/YNIIDI/")));
+      const normalized = href.replace(/^\.\//, "").replace(/^\.\.\//, "").replace(/\/$/, "");
+      let active = false;
+      if (page === "home") active = href === "./" || href === "../" || href === "/" || normalized === "";
+      else if (page === "products") active = normalized === "products" || href === "./";
+      else if (page === "about") active = normalized === "about" || href === "./";
+      else if (page === "contact") active = normalized === "contact" || href === "./";
       link.classList.toggle("active", active);
       if (active) link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
     });
   }
 })();
