@@ -538,7 +538,24 @@ section { padding: 5.5rem 0; }
 }
 .product-block-roadmap { opacity: 0.92; }
 .product-block-roadmap .product-block-body { grid-template-columns: 1fr; }
-.product-block-visual {
+.coming-soon-card {
+  padding: 2.5rem; border-radius: var(--radius-lg);
+  border: 2px dashed var(--line-strong); background: var(--bg-muted);
+  text-align: center;
+}
+.coming-soon-card h3 {
+  margin: 0 0 0.5rem; font-family: var(--font-display);
+  font-size: 1.25rem; font-weight: 700; color: var(--muted);
+}
+.coming-soon-card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.coming-badge {
+  display: inline-block; margin-bottom: 1rem;
+  padding: 0.35rem 0.8rem; border-radius: 999px;
+  background: #f0fdf4; border: 1px solid #bbf7d0;
+  color: #15803d; font-size: 0.75rem; font-weight: 700;
+  letter-spacing: 0.05em; text-transform: uppercase;
+}
+
   padding: 0 2rem 2rem;
 }
 .product-block-visual img {
