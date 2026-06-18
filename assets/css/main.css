@@ -80,13 +80,23 @@ button { font: inherit; cursor: pointer; }
   gap: 1rem;
   min-height: 80px;
 }
-.brand { display: flex; align-items: center; gap: 0.85rem; min-width: 0; flex-shrink: 0; }
-.brand-logo {
+.brand { display: flex; align-items: center; gap: 0.7rem; min-width: 0; flex-shrink: 0; }
+.brand-mark-img {
   display: block;
-  height: 56px;
-  width: auto;
-  max-width: min(240px, 52vw);
+  height: 52px;
+  width: 52px;
   object-fit: contain;
+  flex-shrink: 0;
+}
+.brand-name {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 0.14em;
+  color: #fff;
+  line-height: 1;
+  white-space: nowrap;
 }
 .brand-mark {
   width: 42px; height: 42px; border-radius: 12px;
@@ -96,11 +106,8 @@ button { font: inherit; cursor: pointer; }
   font-family: var(--font-display); font-weight: 800; font-size: 0.72rem;
   letter-spacing: 0.06em; color: #fff;
 }
-.brand-name {
-  display: block; font-family: var(--font-display); font-weight: 800;
-  font-size: 1.05rem; letter-spacing: 0.12em; color: #fff;
-}
-.brand-tag { display: block; font-size: 0.7rem; color: rgba(255,255,255,0.5); }
+/* legacy - unused */
+.brand-tag { display: none; }
 
 .nav-links { display: flex; align-items: center; gap: 0.2rem; }
 .nav-links a {
@@ -1024,7 +1031,8 @@ section { padding: 5.5rem 0; }
 
 /* Tablet & below — mobile navigation */
 @media (max-width: 1200px) {
-  .brand-logo { height: 48px; max-width: min(210px, 48vw); }
+  .brand-mark-img { height: 44px; width: 44px; }
+  .brand-name { font-size: 1.05rem; letter-spacing: 0.12em; }
   .menu-button { display: inline-flex; }
   .nav-links {
     display: none;
