@@ -2,7 +2,7 @@
 
 **You Name It, I'll Do It.**
 
-YNIIDI develops software products that help businesses streamline operations, improve visibility, and reduce dependency on disconnected spreadsheets and manual processes.
+YNIIDI develops business software, intelligent platforms, AI solutions, and enterprise technologies.
 
-- Company site: https://shyaamniranjan.github.io/YNIIDI/
-- BOOM product: https://boom.yniidi.com/
+- Home: https://shyaamniranjan.github.io/YNIIDI/
+- BOOM: https://boom.yniidi.com/

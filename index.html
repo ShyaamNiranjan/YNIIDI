@@ -3,24 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="YNIIDI develops software products that help businesses streamline operations, improve visibility, and reduce dependency on disconnected spreadsheets and manual processes.">
+  <title>YNIIDI | Business Software, Enterprise Solutions &amp; Intelligent Technology Platforms</title>
+  <meta name="description" content="YNIIDI develops business software, intelligent platforms, AI solutions, process automation systems, and enterprise technologies that help organizations streamline operations, improve decision-making, and accelerate growth.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Shyaam Niranjan">
-  <meta name="keywords" content="YNIIDI, You Name It I'll Do It, business operations software, BOOM, distribution software, wholesale software, manufacturing software">
-  <meta name="theme-color" content="#060b14">
+  <meta name="keywords" content="YNIIDI, business software, enterprise software, business technology, process automation, digital transformation, AI solutions, business operations software, custom software development, enterprise platforms, intelligent platforms">
+  <meta name="theme-color" content="#050a12">
   <link rel="canonical" href="https://shyaamniranjan.github.io/YNIIDI/">
-  <meta property="og:title" content="YNIIDI | Building Software That Powers Business Operations">
-  <meta property="og:description" content="YNIIDI develops software products that help businesses streamline operations, improve visibility, and reduce dependency on disconnected spreadsheets and manual processes.">
+  <meta property="og:title" content="YNIIDI | Business Software, Enterprise Solutions &amp; Intelligent Technology Platforms">
+  <meta property="og:description" content="YNIIDI develops business software, intelligent platforms, AI solutions, and enterprise technologies that help organizations streamline operations and accelerate growth.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://shyaamniranjan.github.io/YNIIDI/">
   <meta property="og:site_name" content="YNIIDI">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="YNIIDI | Building Software That Powers Business Operations">
-  <meta name="twitter:description" content="Software products for operational businesses. Explore BOOM and the growing YNIIDI ecosystem.">
+  <meta name="twitter:title" content="YNIIDI | Business Software &amp; Enterprise Solutions">
+  <meta name="twitter:description" content="Software products, intelligent platforms, and enterprise solutions for modern organizations.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <title>YNIIDI | Building Software That Powers Business Operations</title>
+  <link rel="stylesheet" href="assets/css/main.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,8 +32,9 @@
         "name": "YNIIDI",
         "alternateName": "You Name It, I'll Do It",
         "url": "https://shyaamniranjan.github.io/YNIIDI/",
-        "description": "YNIIDI is a software product company focused on developing solutions for operational businesses.",
+        "description": "YNIIDI develops business software, intelligent platforms, AI solutions, process automation systems, and enterprise technologies.",
         "founder": { "@type": "Person", "name": "Shyaam Niranjan", "jobTitle": "Founder" },
+        "knowsAbout": ["Business Software", "Enterprise Software", "Process Automation", "Digital Transformation", "AI Solutions", "Business Operations Software", "Custom Software Development"],
         "sameAs": ["https://github.com/ShyaamNiranjan/YNIIDI", "https://github.com/ShyaamNiranjan"]
       },
       {
@@ -45,1097 +47,21 @@
       {
         "@type": "SoftwareApplication",
         "name": "BOOM",
-        "alternateName": "Business Operations Management Platform",
+        "alternateName": "Business Operations Platform",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web browser",
         "url": "https://boom.yniidi.com/",
-        "description": "BOOM is a self-hosted business management platform for distributors, wholesalers, manufacturers, and import-export businesses.",
+        "description": "Unify inventory, orders, purchases, suppliers, customers, billing, payments, and workflows within a single operational system.",
         "publisher": { "@id": "https://shyaamniranjan.github.io/YNIIDI/#organization" }
       }
     ]
   }
   </script>
-  <style>
-    :root {
-      --bg: #f8fafc;
-      --bg-elevated: #ffffff;
-      --ink: #0b1220;
-      --ink-soft: #1e293b;
-      --muted: #64748b;
-      --line: rgba(15, 23, 42, 0.08);
-      --line-strong: rgba(15, 23, 42, 0.12);
-      --accent: #3b82f6;
-      --accent-2: #6366f1;
-      --accent-glow: rgba(59, 130, 246, 0.35);
-      --hero-bg: #060b14;
-      --radius: 20px;
-      --radius-lg: 28px;
-      --shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
-      --shadow-lg: 0 40px 100px rgba(15, 23, 42, 0.14);
-      --max: 1180px;
-      --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
-      --font-body: "Inter", system-ui, sans-serif;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: var(--font-body);
-      color: var(--ink);
-      background: var(--bg);
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    a { color: inherit; text-decoration: none; }
-    img { display: block; max-width: 100%; }
-    button { font: inherit; cursor: pointer; }
-
-    .container { width: min(var(--max), calc(100% - 2.5rem)); margin: 0 auto; }
-
-    /* ── Header ── */
-    .site-header {
-      position: fixed;
-      inset: 0 0 auto;
-      z-index: 100;
-      transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
-    }
-
-    .site-header.scrolled {
-      background: rgba(255, 255, 255, 0.82);
-      backdrop-filter: blur(20px) saturate(1.4);
-      border-bottom: 1px solid var(--line);
-      box-shadow: 0 8px 32px rgba(15, 23, 42, 0.06);
-    }
-
-    .site-header.scrolled .brand-mark { background: linear-gradient(135deg, #1d4ed8, #4f46e5); }
-    .site-header.scrolled .brand-name { color: var(--ink); }
-    .site-header.scrolled .brand-tag { color: var(--muted); }
-    .site-header.scrolled .nav-links a { color: var(--muted); }
-    .site-header.scrolled .nav-links a:hover,
-    .site-header.scrolled .nav-links a.active { color: var(--ink); background: rgba(59, 130, 246, 0.1); }
-    .site-header.scrolled .menu-button { border-color: var(--line-strong); color: var(--ink); background: var(--bg-elevated); }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.5rem;
-      min-height: 80px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
-    }
-
-    .brand-mark {
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
-      border: 1px solid rgba(255,255,255,0.18);
-      display: grid;
-      place-items: center;
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 0.72rem;
-      letter-spacing: 0.06em;
-      color: #fff;
-      transition: background 0.35s ease;
-    }
-
-    .brand-name {
-      display: block;
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 1.05rem;
-      letter-spacing: 0.12em;
-      color: #fff;
-      transition: color 0.35s ease;
-    }
-
-    .brand-tag {
-      display: block;
-      font-size: 0.72rem;
-      color: rgba(255,255,255,0.55);
-      letter-spacing: 0.02em;
-      transition: color 0.35s ease;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 0.25rem;
-    }
-
-    .nav-links a {
-      padding: 0.55rem 1rem;
-      border-radius: 999px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: rgba(255,255,255,0.72);
-      transition: background 0.2s, color 0.2s;
-    }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: #fff;
-      background: rgba(255,255,255,0.1);
-    }
-
-    .nav-cta {
-      margin-left: 0.5rem;
-      padding: 0.6rem 1.15rem !important;
-      background: #fff !important;
-      color: var(--ink) !important;
-      font-weight: 600 !important;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    }
-
-    .nav-cta:hover { transform: translateY(-1px); background: #f1f5f9 !important; }
-
-    .menu-button {
-      display: none;
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.2);
-      background: rgba(255,255,255,0.06);
-      color: #fff;
-      margin-left: auto;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 5px;
-    }
-
-    .menu-button span {
-      display: block;
-      width: 18px;
-      height: 2px;
-      background: currentColor;
-      border-radius: 2px;
-      transition: transform 0.25s, opacity 0.25s;
-    }
-
-    .menu-button.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .menu-button.open span:nth-child(2) { opacity: 0; }
-    .menu-button.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-    /* ── Buttons ── */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 0.9rem 1.5rem;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      font-family: var(--font-display);
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
-    }
-
-    .btn:hover { transform: translateY(-2px); }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #3b82f6, #4f46e5);
-      color: #fff;
-      box-shadow: 0 16px 40px var(--accent-glow);
-    }
-
-    .btn-primary:hover { box-shadow: 0 20px 50px rgba(59, 130, 246, 0.45); }
-
-    .btn-ghost {
-      background: rgba(255,255,255,0.08);
-      border-color: rgba(255,255,255,0.18);
-      color: #fff;
-      backdrop-filter: blur(8px);
-    }
-
-    .btn-ghost:hover { background: rgba(255,255,255,0.14); }
-
-    .btn-outline {
-      background: var(--bg-elevated);
-      border-color: var(--line-strong);
-      color: var(--ink);
-      box-shadow: var(--shadow);
-    }
-
-  .btn-link {
-      padding: 0;
-      border-radius: 0;
-      color: var(--accent);
-      font-weight: 600;
-      gap: 0.35rem;
-    }
-
-    .btn-link:hover { transform: none; }
-    .btn-link svg { transition: transform 0.2s; }
-    .btn-link:hover svg { transform: translateX(4px); }
-
-    /* ── Hero ── */
-    .hero {
-      position: relative;
-      min-height: 100vh;
-      min-height: 100dvh;
-      display: flex;
-      align-items: center;
-      padding: 7rem 0 5rem;
-      background: var(--hero-bg);
-      overflow: hidden;
-    }
-
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-    }
-
-    .hero-bg::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 80% 60% at 20% 10%, rgba(59, 130, 246, 0.28), transparent 55%),
-        radial-gradient(ellipse 60% 50% at 85% 20%, rgba(99, 102, 241, 0.22), transparent 50%),
-        radial-gradient(ellipse 50% 40% at 50% 100%, rgba(14, 165, 233, 0.12), transparent 55%);
-    }
-
-    .hero-grid-lines {
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-      background-size: 64px 64px;
-      mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent);
-    }
-
-    .hero-orb {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(80px);
-      animation: float 12s ease-in-out infinite;
-    }
-
-    .hero-orb-1 { width: 400px; height: 400px; background: rgba(59,130,246,0.15); top: -10%; right: 10%; }
-    .hero-orb-2 { width: 300px; height: 300px; background: rgba(99,102,241,0.12); bottom: 10%; left: -5%; animation-delay: -4s; }
-
-    @keyframes float {
-      0%, 100% { transform: translate(0, 0); }
-      50% { transform: translate(20px, -20px); }
-    }
-
-    .hero-inner {
-      position: relative;
-      z-index: 2;
-      display: grid;
-      grid-template-columns: 1fr 1.05fr;
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.55rem;
-      padding: 0.45rem 0.9rem 0.45rem 0.55rem;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
-      color: rgba(255,255,255,0.75);
-      font-size: 0.82rem;
-      font-weight: 500;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero-eyebrow-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #22c55e;
-      box-shadow: 0 0 12px rgba(34, 197, 94, 0.6);
-      animation: pulse 2s ease infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
-    }
-
-    .hero h1 {
-      margin: 0 0 1.25rem;
-      font-family: var(--font-display);
-      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
-      font-weight: 800;
-      line-height: 1.04;
-      letter-spacing: -0.035em;
-      color: #fff;
-    }
-
-    .hero h1 .gradient-text {
-      background: linear-gradient(135deg, #93c5fd 0%, #a5b4fc 50%, #c4b5fd 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hero-lead {
-      margin: 0 0 2rem;
-      max-width: 32rem;
-      font-size: 1.1rem;
-      line-height: 1.7;
-      color: rgba(255,255,255,0.62);
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.85rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .hero-stats {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      padding-top: 2rem;
-      border-top: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .hero-stat strong {
-      display: block;
-      font-family: var(--font-display);
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: -0.02em;
-    }
-
-    .hero-stat span {
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.45);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-
-    .hero-visual {
-      position: relative;
-    }
-
-    .hero-visual-frame {
-      position: relative;
-      border-radius: var(--radius-lg);
-      padding: 1px;
-      background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.04));
-      box-shadow: 0 40px 100px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.05) inset;
-    }
-
-    .hero-visual-inner {
-      border-radius: calc(var(--radius-lg) - 1px);
-      overflow: hidden;
-      background: #0f172a;
-    }
-
-    .hero-browser-bar {
-      display: flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.85rem 1rem;
-      background: rgba(255,255,255,0.04);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .hero-browser-bar span {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.12);
-    }
-
-    .hero-browser-bar span:first-child { background: #ef4444; opacity: 0.7; }
-    .hero-browser-bar span:nth-child(2) { background: #eab308; opacity: 0.7; }
-    .hero-browser-bar span:nth-child(3) { background: #22c55e; opacity: 0.7; }
-
-    .hero-screenshot {
-      width: 100%;
-      aspect-ratio: 16/10;
-      object-fit: cover;
-      object-position: top left;
-    }
-
-    .hero-float-card {
-      position: absolute;
-      padding: 0.85rem 1.1rem;
-      border-radius: 14px;
-      background: rgba(15, 23, 42, 0.88);
-      border: 1px solid rgba(255,255,255,0.1);
-      backdrop-filter: blur(16px);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.35);
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.8);
-    }
-
-    .hero-float-card strong { display: block; color: #fff; font-size: 0.95rem; margin-bottom: 0.15rem; }
-    .hero-float-1 { bottom: -1rem; left: -1.5rem; animation: float 8s ease-in-out infinite; }
-    .hero-float-2 { top: 2rem; right: -1.25rem; animation: float 10s ease-in-out infinite; animation-delay: -3s; }
-
-    /* ── Sections ── */
-    section { padding: 6rem 0; }
-
-    .section-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
-      font-family: var(--font-display);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-
-    .section-label::before {
-      content: "";
-      width: 24px;
-      height: 2px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-2));
-      border-radius: 2px;
-    }
-
-    .section-head {
-      max-width: 40rem;
-      margin-bottom: 3rem;
-    }
-
-    .section-head h2 {
-      margin: 0 0 1rem;
-      font-family: var(--font-display);
-      font-size: clamp(2rem, 4vw, 2.75rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      line-height: 1.12;
-      color: var(--ink);
-    }
-
-    .section-head p,
-    .prose p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.05rem;
-      line-height: 1.75;
-    }
-
-    .prose p + p { margin-top: 1.1rem; }
-
-    .section-muted {
-      background: linear-gradient(180deg, #f1f5f9 0%, var(--bg) 100%);
-    }
-
-    .section-dark {
-      background: var(--hero-bg);
-      color: #e2e8f0;
-    }
-
-    .section-dark .section-head h2 { color: #fff; }
-    .section-dark .section-head p { color: rgba(255,255,255,0.55); }
-    .section-dark .section-label { color: #93c5fd; }
-
-    /* ── Intro bento ── */
-    .intro-bento {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 1.25rem;
-    }
-
-    .intro-main {
-      padding: 2.5rem;
-      border-radius: var(--radius-lg);
-      background: var(--bg-elevated);
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
-    }
-
-    .intro-main h2 {
-      margin: 0 0 1.25rem;
-      font-family: var(--font-display);
-      font-size: clamp(1.6rem, 3vw, 2.1rem);
-      font-weight: 800;
-      letter-spacing: -0.025em;
-      line-height: 1.15;
-    }
-
-    .intro-side {
-      display: grid;
-      gap: 1.25rem;
-    }
-
-    .intro-stat-card {
-      padding: 1.5rem;
-      border-radius: var(--radius);
-      background: linear-gradient(135deg, #1e3a8a, #312e81);
-      color: #fff;
-      box-shadow: var(--shadow-lg);
-    }
-
-    .intro-stat-card strong {
-      display: block;
-      font-family: var(--font-display);
-      font-size: 2rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 0.25rem;
-    }
-
-    .intro-stat-card span { font-size: 0.88rem; opacity: 0.75; }
-
-    .intro-pill-card {
-      padding: 1.5rem;
-      border-radius: var(--radius);
-      background: var(--bg-elevated);
-      border: 1px solid var(--line);
-    }
-
-    .intro-pill-card h3 {
-      margin: 0 0 0.4rem;
-      font-family: var(--font-display);
-      font-size: 1rem;
-      font-weight: 700;
-    }
-
-    .intro-pill-card p { margin: 0; font-size: 0.9rem; color: var(--muted); }
-
-    /* ── Products ── */
-    .product-showcase {
-      display: grid;
-      gap: 1.5rem;
-    }
-
-    .product-flagship {
-      display: grid;
-      grid-template-columns: 1fr 1.1fr;
-      gap: 0;
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      background: var(--bg-elevated);
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .product-flagship-content {
-      padding: 2.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .product-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      width: fit-content;
-      padding: 0.35rem 0.75rem;
-      border-radius: 999px;
-      background: linear-gradient(135deg, rgba(59,130,246,0.12), rgba(99,102,241,0.12));
-      border: 1px solid rgba(59,130,246,0.2);
-      color: #1d4ed8;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-
-    .product-badge::before {
-      content: "";
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #22c55e;
-    }
-
-    .product-flagship h3 {
-      margin: 0 0 0.35rem;
-      font-family: var(--font-display);
-      font-size: 2rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .product-flagship h3 img {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      padding: 0.4rem;
-      background: var(--bg);
-      border: 1px solid var(--line);
-    }
-
-    .product-subtitle {
-      margin: 0 0 1rem;
-      font-weight: 600;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .product-flagship p {
-      margin: 0 0 1.5rem;
-      color: var(--muted);
-      line-height: 1.7;
-    }
-
-    .product-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.45rem;
-      margin-bottom: 1.75rem;
-    }
-
-    .product-tags span {
-      padding: 0.35rem 0.7rem;
-      border-radius: 8px;
-      background: var(--bg);
-      border: 1px solid var(--line);
-      font-size: 0.78rem;
-      font-weight: 500;
-      color: var(--ink-soft);
-    }
-
-    .product-flagship-visual {
-      position: relative;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      padding: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .product-flagship-visual img {
-      border-radius: 12px;
-      box-shadow: 0 30px 80px rgba(0,0,0,0.4);
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .product-coming {
-      padding: 2.5rem;
-      border-radius: var(--radius-lg);
-      border: 2px dashed var(--line-strong);
-      background: repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 8px,
-        rgba(15,23,42,0.02) 8px,
-        rgba(15,23,42,0.02) 16px
-      );
-      text-align: center;
-    }
-
-    .product-coming h3 {
-      margin: 0 0 0.5rem;
-      font-family: var(--font-display);
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--muted);
-    }
-
-    .product-coming p { margin: 0; color: var(--muted); font-size: 0.95rem; }
-
-    .coming-badge {
-      display: inline-block;
-      margin-bottom: 1rem;
-      padding: 0.35rem 0.8rem;
-      border-radius: 999px;
-      background: #f0fdf4;
-      border: 1px solid #bbf7d0;
-      color: #15803d;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    /* ── Feature grid ── */
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.25rem;
-    }
-
-    .feature-card {
-      padding: 2rem;
-      border-radius: var(--radius);
-      background: var(--bg-elevated);
-      border: 1px solid var(--line);
-      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow);
-      border-color: rgba(59,130,246,0.2);
-    }
-
-    .feature-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 1.25rem;
-      background: linear-gradient(135deg, rgba(59,130,246,0.12), rgba(99,102,241,0.08));
-      color: var(--accent);
-      font-size: 1.25rem;
-    }
-
-    .feature-card h3 {
-      margin: 0 0 0.5rem;
-      font-family: var(--font-display);
-      font-size: 1.1rem;
-      font-weight: 700;
-    }
-
-    .feature-card p { margin: 0; font-size: 0.95rem; color: var(--muted); line-height: 1.65; }
-
-    /* ── Industries ── */
-    .industry-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-    }
-
-    .industry-card {
-      padding: 1.75rem;
-      border-radius: var(--radius);
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      transition: background 0.25s, border-color 0.25s, transform 0.25s;
-    }
-
-    .industry-card:hover {
-      background: rgba(255,255,255,0.07);
-      border-color: rgba(255,255,255,0.14);
-      transform: translateY(-3px);
-    }
-
-    .industry-num {
-      font-family: var(--font-display);
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      color: rgba(255,255,255,0.3);
-      margin-bottom: 1rem;
-    }
-
-    .industry-card h3 {
-      margin: 0 0 0.5rem;
-      font-family: var(--font-display);
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #fff;
-    }
-
-    .industry-card p { margin: 0; font-size: 0.88rem; color: rgba(255,255,255,0.5); line-height: 1.6; }
-
-    /* ── Vision ── */
-    .vision-block {
-      position: relative;
-      padding: 4rem;
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #172554 100%);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .vision-block::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 60% 80% at 100% 0%, rgba(99,102,241,0.25), transparent);
-    }
-
-    .vision-block h2 {
-      position: relative;
-      margin: 0 0 1.25rem;
-      font-family: var(--font-display);
-      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      color: #fff;
-      max-width: 20ch;
-    }
-
-    .vision-block p {
-      position: relative;
-      margin: 0;
-      max-width: 52rem;
-      font-size: 1.08rem;
-      line-height: 1.75;
-      color: rgba(255,255,255,0.6);
-    }
-
-    /* ── Values ── */
-    .values-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-    }
-
-    .value-card {
-      padding: 1.75rem;
-      border-radius: var(--radius);
-      background: var(--bg-elevated);
-      border: 1px solid var(--line);
-      border-top: 3px solid transparent;
-      transition: border-color 0.25s, transform 0.25s;
-    }
-
-    .value-card:hover {
-      border-top-color: var(--accent);
-      transform: translateY(-3px);
-    }
-
-    .value-card h3 {
-      margin: 0 0 0.45rem;
-      font-family: var(--font-display);
-      font-size: 1rem;
-      font-weight: 700;
-    }
-
-    .value-card p { margin: 0; font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
-
-    /* ── About + Founder ── */
-    .about-split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: start;
-    }
-
-    .founder-card {
-      padding: 2.5rem;
-      border-radius: var(--radius-lg);
-      background: var(--bg-elevated);
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
-    }
-
-    .founder-avatar {
-      width: 72px;
-      height: 72px;
-      border-radius: 20px;
-      background: linear-gradient(135deg, #1d4ed8, #4f46e5);
-      display: grid;
-      place-items: center;
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 1.5rem;
-      color: #fff;
-      margin-bottom: 1.25rem;
-    }
-
-    .founder-card h3 {
-      margin: 0 0 0.25rem;
-      font-family: var(--font-display);
-      font-size: 1.75rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-    }
-
-    .founder-role {
-      margin: 0 0 1rem;
-      font-weight: 600;
-      color: var(--accent);
-      font-size: 0.9rem;
-    }
-
-    .founder-card p { margin: 0 0 1.5rem; color: var(--muted); line-height: 1.7; }
-
-    .founder-links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-
-    /* ── CTA ── */
-    .cta-section {
-      padding: 5rem 0 6rem;
-    }
-
-    .cta-panel {
-      position: relative;
-      padding: 4rem;
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      background: var(--hero-bg);
-      text-align: center;
-    }
-
-    .cta-panel::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 50% 80% at 50% 120%, rgba(59,130,246,0.3), transparent),
-        radial-gradient(ellipse 40% 60% at 0% 0%, rgba(99,102,241,0.15), transparent);
-    }
-
-    .cta-panel h2 {
-      position: relative;
-      margin: 0 0 1rem;
-      font-family: var(--font-display);
-      font-size: clamp(1.8rem, 4vw, 2.75rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      color: #fff;
-    }
-
-    .cta-panel p {
-      position: relative;
-      margin: 0 auto 2rem;
-      max-width: 36rem;
-      color: rgba(255,255,255,0.55);
-      font-size: 1.05rem;
-    }
-
-    .cta-actions {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.85rem;
-    }
-
-    .cta-links {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .cta-links a {
-      font-size: 0.9rem;
-      color: rgba(255,255,255,0.45);
-      transition: color 0.2s;
-    }
-
-    .cta-links a:hover { color: #fff; }
-
-    /* ── Footer ── */
-    .site-footer {
-      padding: 2.5rem 0;
-      border-top: 1px solid var(--line);
-      background: var(--bg-elevated);
-    }
-
-    .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .footer-brand strong {
-      display: block;
-      font-family: var(--font-display);
-      font-weight: 800;
-      letter-spacing: 0.1em;
-      margin-bottom: 0.25rem;
-    }
-
-    .footer-brand span { font-size: 0.88rem; color: var(--muted); }
-
-    .footer-nav {
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .footer-nav a {
-      font-size: 0.9rem;
-      color: var(--muted);
-      transition: color 0.2s;
-    }
-
-    .footer-nav a:hover { color: var(--ink); }
-
-    /* ── Animations ── */
-    .reveal {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.3s; }
-
-    /* ── Responsive ── */
-    @media (max-width: 1024px) {
-      .hero-inner,
-      .intro-bento,
-      .product-flagship,
-      .about-split,
-      .values-grid,
-      .industry-grid { grid-template-columns: 1fr; }
-
-      .hero-visual { order: -1; }
-      .hero-float-1, .hero-float-2 { display: none; }
-      .feature-grid { grid-template-columns: 1fr; }
-    }
-
-    @media (max-width: 768px) {
-      section { padding: 4.5rem 0; }
-
-      .nav-links {
-        display: none;
-        position: fixed;
-        top: 80px;
-        left: 1.25rem;
-        right: 1.25rem;
-        flex-direction: column;
-        align-items: stretch;
-        padding: 0.75rem;
-        border-radius: var(--radius);
-        background: rgba(255,255,255,0.95);
-        backdrop-filter: blur(20px);
-        border: 1px solid var(--line);
-        box-shadow: var(--shadow-lg);
-      }
-
-      .site-header:not(.scrolled) .nav-links {
-        background: rgba(15, 23, 42, 0.95);
-        border-color: rgba(255,255,255,0.1);
-      }
-
-      .site-header:not(.scrolled) .nav-links a { color: rgba(255,255,255,0.8); }
-      .site-header.scrolled .nav-links a { color: var(--muted); }
-
-      .nav-links.open { display: flex; }
-      .nav-links a { padding: 0.85rem 1rem; }
-      .nav-cta { margin-left: 0 !important; text-align: center; }
-
-      .menu-button { display: inline-flex; }
-
-      .hero { min-height: auto; padding: 6.5rem 0 4rem; }
-      .hero-stats { gap: 1.25rem; }
-      .vision-block, .cta-panel { padding: 2.5rem 1.75rem; }
-      .product-flagship-content { padding: 2rem; }
-    }
-  </style>
 </head>
-<body>
+<body data-page="home">
   <header class="site-header" id="site-header">
     <div class="container nav">
-      <a class="brand" href="#home" aria-label="YNIIDI home">
+      <a class="brand" href="./" aria-label="YNIIDI home">
         <div class="brand-mark">YN</div>
         <div>
           <span class="brand-name">YNIIDI</span>
@@ -1146,290 +72,288 @@
         <span></span><span></span><span></span>
       </button>
       <nav class="nav-links" id="site-nav" aria-label="Primary">
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="nav-cta">Contact Us</a>
+        <a href="./" class="active" aria-current="page">Home</a>
+        <a href="products/">Products</a>
+        <a href="about/">About</a>
+        <a href="contact/" class="nav-cta">Contact Us</a>
       </nav>
     </div>
   </header>
 
   <main>
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="hero-bg">
-      <div class="hero-grid-lines"></div>
-      <div class="hero-orb hero-orb-1"></div>
-      <div class="hero-orb hero-orb-2"></div>
-    </div>
-    <div class="container hero-inner">
-      <div class="reveal">
-        <div class="hero-eyebrow">
-          <span class="hero-eyebrow-dot"></span>
-          Software product company
-        </div>
-        <h1>Building Software That <span class="gradient-text">Powers</span> Business Operations</h1>
-        <p class="hero-lead">
-          YNIIDI develops software products that help businesses streamline operations, improve visibility,
-          and move beyond disconnected spreadsheets and manual processes.
-        </p>
+    <section class="hero" id="home">
+      <div class="hero-bg"><div class="hero-grid-lines"></div></div>
+      <div class="container hero-inner reveal">
+        <p class="hero-label">Technology Products &bull; Enterprise Solutions &bull; Intelligent Platforms</p>
+        <h1>Building the <span class="accent">Future</span> of Business Technology</h1>
+        <p class="hero-lead">YNIIDI develops software products, intelligent platforms, and enterprise solutions that help organizations streamline operations, automate processes, unlock business intelligence, and accelerate growth.</p>
+        <p class="hero-lead">From business operations management software to AI-powered decision systems, we create technology that empowers organizations to operate with greater visibility, efficiency, and confidence.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#products">Explore Products</a>
-          <a class="btn btn-ghost" href="#contact">Contact Us</a>
+          <a class="btn btn-primary" href="products/">Explore Our Ecosystem</a>
+          <a class="btn btn-ghost" href="contact/">Talk To Our Team</a>
         </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <strong>BOOM</strong>
-            <span>Live product</span>
-          </div>
-          <div class="hero-stat">
-            <strong>4+</strong>
-            <span>Industries served</span>
-          </div>
-          <div class="hero-stat">
-            <strong>1</strong>
-            <span>Growing ecosystem</span>
+      </div>
+      <div class="trust-bar">
+        <div class="container">
+          <span class="trust-title">Trusted Technology Principles</span>
+          <div class="trust-items">
+            <span>Innovation-Driven Development</span>
+            <span>Enterprise-Grade Architecture</span>
+            <span>Scalable Digital Solutions</span>
+            <span>Customer-Centric Engineering</span>
+            <span>Long-Term Technology Partnerships</span>
           </div>
         </div>
       </div>
-      <div class="hero-visual reveal reveal-delay-2">
-        <div class="hero-visual-frame">
-          <div class="hero-visual-inner">
-            <div class="hero-browser-bar"><span></span><span></span><span></span></div>
-            <img class="hero-screenshot" src="assets/overview-dashboard.png" alt="BOOM business operations dashboard by YNIIDI" width="800" height="500">
-          </div>
-        </div>
-        <div class="hero-float-card hero-float-1">
-          <strong>Unified operations</strong>
-          Inventory · Billing · Suppliers
-        </div>
-        <div class="hero-float-card hero-float-2">
-          <strong>Self-hosted</strong>
-          Full ownership &amp; control
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Introduction -->
-  <section id="introduction">
-    <div class="container">
-      <div class="intro-bento">
-        <div class="intro-main reveal">
-          <div class="section-label">Company</div>
-          <h2>Software Built for Real-World Operations</h2>
-          <div class="prose">
-            <p>Modern businesses generate enormous amounts of operational data, yet many still rely on spreadsheets, fragmented tools, and manual workflows to manage critical processes.</p>
-            <p>At YNIIDI, we build software products that bring operations, inventory, purchasing, customers, suppliers, and business workflows into a unified digital ecosystem.</p>
-            <p>Our focus is simple: create software that is practical, reliable, and adaptable to the way businesses actually work.</p>
-          </div>
-        </div>
-        <div class="intro-side">
-          <div class="intro-stat-card reveal reveal-delay-1">
-            <strong>100%</strong>
-            <span>Product-focused company building for operational clarity</span>
-          </div>
-          <div class="intro-pill-card reveal reveal-delay-2">
-            <h3>Practical by design</h3>
-            <p>Every product starts with a real workflow problem — not a feature checklist.</p>
-          </div>
-          <div class="intro-pill-card reveal reveal-delay-3">
-            <h3>Built to scale</h3>
-            <p>From growing teams to complex operations, our architecture grows with you.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Products -->
-  <section class="section-muted" id="products">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="section-label">Products</div>
-        <h2>Our Products</h2>
-        <p>Focused software for operational businesses. BOOM is live today — more products are on the way.</p>
-      </div>
-      <div class="product-showcase">
-        <article class="product-flagship reveal">
-          <div class="product-flagship-content">
-            <span class="product-badge">Live product</span>
-            <h3><img src="assets/boom-logo.png" alt="" width="48" height="48"> BOOM</h3>
-            <p class="product-subtitle">Business Operations Management Platform</p>
-            <p>BOOM is a self-hosted business management platform designed for distributors, wholesalers, manufacturers, and import-export businesses. It centralizes inventory, orders, purchases, customers, suppliers, billing, payments, and workflow management into a single connected system.</p>
-            <div class="product-tags">
-              <span>Inventory</span>
-              <span>Orders &amp; Purchases</span>
-              <span>Billing &amp; Payments</span>
-              <span>Supplier Management</span>
-              <span>Workflows</span>
-              <span>Self-hosted</span>
+    <section id="challenge">
+      <div class="container">
+        <div class="problem-grid">
+          <div class="reveal">
+            <div class="section-label">The Challenge</div>
+            <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:800;letter-spacing:-0.03em;line-height:1.12;margin:0 0 1rem;">Modern Businesses Face A Growing Technology Challenge</h2>
+            <div class="prose">
+              <p>Organizations today operate across multiple systems, spreadsheets, applications, departments, and data sources.</p>
+              <p>As businesses grow, operational complexity increases.</p>
             </div>
-            <a class="btn btn-primary" href="https://boom.yniidi.com/" target="_blank" rel="noopener noreferrer">
-              Visit BOOM
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
           </div>
-          <div class="product-flagship-visual">
-            <img src="assets/overview-dashboard.png" alt="BOOM platform dashboard" width="520" height="325">
+          <div class="reveal reveal-d1">
+            <ul class="problem-list">
+              <li>Information becomes fragmented</li>
+              <li>Processes become disconnected</li>
+              <li>Decision-making becomes slower</li>
+              <li>Opportunities become harder to identify</li>
+            </ul>
+            <div class="prose" style="margin-top:1.5rem;">
+              <p>Many organizations spend more time managing systems than creating value.</p>
+              <p>At YNIIDI, we believe technology should eliminate complexity—not create it.</p>
+              <p>That's why we build software products, enterprise platforms, and intelligent solutions designed to unify operations, improve visibility, and help organizations make smarter decisions.</p>
+            </div>
           </div>
-        </article>
-        <article class="product-coming reveal">
-          <span class="coming-badge">Coming Soon</span>
-          <h3>Future Products</h3>
-          <p>Additional software products are currently under development as part of the YNIIDI ecosystem.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why YNIIDI -->
-  <section id="why-yniidi">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="section-label">Why YNIIDI</div>
-        <h2>Why Businesses Choose YNIIDI</h2>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card reveal">
-          <div class="feature-icon">&#9670;</div>
-          <h3>Practical Solutions</h3>
-          <p>Every product is designed around real operational challenges rather than theoretical workflows.</p>
-        </article>
-        <article class="feature-card reveal reveal-delay-1">
-          <div class="feature-icon">&#9672;</div>
-          <h3>Business-Centric Design</h3>
-          <p>Software should adapt to businesses — not force businesses to adapt to software.</p>
-        </article>
-        <article class="feature-card reveal reveal-delay-1">
-          <div class="feature-icon">&#9673;</div>
-          <h3>Ownership &amp; Control</h3>
-          <p>Our solutions prioritize transparency, flexibility, and control over business data.</p>
-        </article>
-        <article class="feature-card reveal reveal-delay-2">
-          <div class="feature-icon">&#9650;</div>
-          <h3>Scalable Architecture</h3>
-          <p>Built to support growing organizations and evolving operational requirements.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Industries -->
-  <section class="section-dark" id="industries">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="section-label">Industries</div>
-        <h2>Industries We Serve</h2>
-        <p>Operational software built for the industries that move products, manage supply chains, and run complex day-to-day workflows.</p>
-      </div>
-      <div class="industry-grid">
-        <article class="industry-card reveal">
-          <div class="industry-num">01</div>
-          <h3>Distribution</h3>
-          <p>Manage inventory, orders, suppliers, and customers from a centralized platform.</p>
-        </article>
-        <article class="industry-card reveal reveal-delay-1">
-          <div class="industry-num">02</div>
-          <h3>Wholesale</h3>
-          <p>Gain visibility across inventory movement, sales activities, and operational workflows.</p>
-        </article>
-        <article class="industry-card reveal reveal-delay-1">
-          <div class="industry-num">03</div>
-          <h3>Manufacturing</h3>
-          <p>Connect purchasing, inventory, production-related operations, and business processes.</p>
-        </article>
-        <article class="industry-card reveal reveal-delay-2">
-          <div class="industry-num">04</div>
-          <h3>Import &amp; Export</h3>
-          <p>Track orders, inventory, supplier relationships, and business activities with greater clarity.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Vision -->
-  <section id="vision">
-    <div class="container">
-      <div class="vision-block reveal">
-        <div class="section-label" style="color:#93c5fd;">Vision</div>
-        <h2>Our Vision</h2>
-        <p>We envision a future where businesses operate through connected systems rather than disconnected spreadsheets. By building practical and adaptable software products, we aim to help organizations make faster decisions, improve operational visibility, and scale with confidence.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Values -->
-  <section class="section-muted" id="values">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="section-label">Values</div>
-        <h2>What Drives Us</h2>
-      </div>
-      <div class="values-grid">
-        <article class="value-card reveal">
-          <h3>Simplicity</h3>
-          <p>Complex business processes deserve clear and intuitive software.</p>
-        </article>
-        <article class="value-card reveal reveal-delay-1">
-          <h3>Reliability</h3>
-          <p>Software should become an asset businesses can depend on every day.</p>
-        </article>
-        <article class="value-card reveal reveal-delay-1">
-          <h3>Transparency</h3>
-          <p>Organizations should maintain visibility and control over their operations and data.</p>
-        </article>
-        <article class="value-card reveal reveal-delay-2">
-          <h3>Continuous Improvement</h3>
-          <p>Great products evolve alongside the businesses that use them.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- About + Founder -->
-  <section id="about">
-    <div class="container about-split">
-      <div class="reveal">
-        <div class="section-label">About</div>
-        <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;letter-spacing:-0.03em;margin:0 0 1.25rem;line-height:1.12;">About Us</h2>
-        <div class="prose">
-          <p>YNIIDI is a software product company focused on developing solutions for operational businesses.</p>
-          <p>Our mission is to create software that simplifies complex business processes while providing organizations with greater visibility, efficiency, and control.</p>
-          <p>Starting with business operations management, we are building a growing ecosystem of software products designed to solve practical business challenges.</p>
         </div>
       </div>
-      <article class="founder-card reveal reveal-delay-1" id="founder">
-        <div class="founder-avatar">SN</div>
-        <h3>Shyaam Niranjan</h3>
-        <p class="founder-role">Founder of YNIIDI · Creator of BOOM</p>
-        <p>Driven by a passion for building practical software solutions, Shyaam focuses on developing products that help businesses simplify operations, improve visibility, and move beyond fragmented workflows.</p>
-        <div class="founder-links">
-          <a class="btn btn-outline" href="https://www.linkedin.com/in/shyaamniranjan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a class="btn btn-outline" href="https://github.com/ShyaamNiranjan" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-      </article>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="cta-section" id="contact">
-    <div class="container">
-      <div class="cta-panel reveal">
-        <h2>Ready to Explore YNIIDI Products?</h2>
-        <p>Discover software designed to simplify operations, improve visibility, and support business growth.</p>
-        <div class="cta-actions">
-          <a class="btn btn-primary" href="#products">Explore Products</a>
-          <a class="btn btn-ghost" href="https://github.com/ShyaamNiranjan" target="_blank" rel="noopener noreferrer">Contact Us</a>
+    <section class="section-muted" id="what-we-build">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">What We Build</div>
+          <h2>Technology Designed For Modern Organizations</h2>
         </div>
-        <div class="cta-links">
-          <a href="https://boom.yniidi.com/" target="_blank" rel="noopener noreferrer">BOOM</a>
-          <a href="https://github.com/ShyaamNiranjan" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/shyaamniranjan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <div class="grid-4">
+          <article class="card reveal">
+            <div class="card-icon">&#9632;</div>
+            <h3>Software Products</h3>
+            <p>Purpose-built business software designed to solve operational challenges and improve organizational efficiency.</p>
+          </article>
+          <article class="card reveal reveal-d1">
+            <div class="card-icon">&#9670;</div>
+            <h3>Intelligent Platforms</h3>
+            <p>Connected technology ecosystems that transform business data into actionable intelligence.</p>
+          </article>
+          <article class="card reveal reveal-d1">
+            <div class="card-icon">&#9672;</div>
+            <h3>Enterprise Solutions</h3>
+            <p>Custom software development and enterprise-grade systems tailored to unique business requirements.</p>
+          </article>
+          <article class="card reveal reveal-d2">
+            <div class="card-icon">&#9889;</div>
+            <h3>AI &amp; Automation</h3>
+            <p>Next-generation technologies that improve productivity, automate workflows, and support decision-making.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section id="ecosystem">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">Ecosystem</div>
+          <h2>An Ecosystem Built For Growth</h2>
+          <p>YNIIDI is not built around a single product. We are building a connected ecosystem of technology products and intelligent platforms that help organizations operate, innovate, and grow. Each product delivers value independently while becoming even more powerful when combined with other YNIIDI technologies.</p>
+        </div>
+        <div class="ecosystem-grid">
+          <article class="eco-flagship reveal">
+            <div class="eco-flagship-content eco-card">
+              <span class="status-badge status-active">Active Product</span>
+              <h3>BOOM</h3>
+              <p class="eco-subtitle">Business Operations Platform</p>
+              <p>Unify inventory, orders, purchases, suppliers, customers, billing, payments, and workflows within a single operational system.</p>
+              <a class="btn btn-primary" href="https://boom.yniidi.com/" target="_blank" rel="noopener noreferrer">Explore BOOM</a>
+            </div>
+            <div class="eco-flagship-visual">
+              <img src="assets/overview-dashboard.png" alt="BOOM business operations platform dashboard" width="520" height="325">
+            </div>
+          </article>
+          <div class="grid-3">
+            <article class="card eco-card reveal">
+              <span class="status-badge status-roadmap">Product Roadmap</span>
+              <h3>NEXUS</h3>
+              <p class="eco-subtitle">Enterprise Integration Platform</p>
+              <p>Connect systems, departments, applications, and business data through a centralized integration layer.</p>
+            </article>
+            <article class="card eco-card reveal reveal-d1">
+              <span class="status-badge status-roadmap">Product Roadmap</span>
+              <h3>INSIGHT</h3>
+              <p class="eco-subtitle">Business Intelligence Platform</p>
+              <p>Transform operational data into actionable business intelligence through dashboards, analytics, and reporting.</p>
+            </article>
+            <article class="card eco-card reveal reveal-d2">
+              <span class="status-badge status-roadmap">Product Roadmap</span>
+              <h3>PULSE</h3>
+              <p class="eco-subtitle">AI Decision Intelligence Platform</p>
+              <p>Leverage artificial intelligence to improve forecasting, recommendations, operational efficiency, and business decision-making.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-muted" id="why-yniidi">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">Why YNIIDI</div>
+          <h2>Why Organizations Choose YNIIDI</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card reveal">
+            <h3>Business-Focused Innovation</h3>
+            <p>Every product and solution is designed around real business challenges and measurable outcomes.</p>
+          </article>
+          <article class="card reveal reveal-d1">
+            <h3>Built For Scale</h3>
+            <p>Our technologies are engineered to grow alongside organizations of every size.</p>
+          </article>
+          <article class="card reveal reveal-d1">
+            <h3>Future-Ready Architecture</h3>
+            <p>Designed to support evolving business needs, emerging technologies, and long-term growth.</p>
+          </article>
+          <article class="card reveal reveal-d2">
+            <h3>Enterprise Thinking</h3>
+            <p>We combine strategic thinking, engineering excellence, and product innovation to create technology that delivers lasting value.</p>
+          </article>
+          <article class="card reveal reveal-d2">
+            <h3>Practical Technology</h3>
+            <p>Technology should solve problems, improve efficiency, and create opportunities—not increase complexity.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-dark" id="industries">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">Industries</div>
+          <h2>Supporting Organizations Across Industries</h2>
+          <p>YNIIDI technologies are designed to support organizations operating in complex, process-driven environments.</p>
+        </div>
+        <div class="grid-3">
+          <article class="industry-card reveal">
+            <div class="industry-num">01</div>
+            <h3>Distribution</h3>
+            <p>Improve inventory visibility, order management, supplier coordination, and operational efficiency.</p>
+          </article>
+          <article class="industry-card reveal reveal-d1">
+            <div class="industry-num">02</div>
+            <h3>Manufacturing</h3>
+            <p>Connect procurement, inventory, production workflows, and business operations through a unified technology platform.</p>
+          </article>
+          <article class="industry-card reveal reveal-d1">
+            <div class="industry-num">03</div>
+            <h3>Wholesale</h3>
+            <p>Manage customers, inventory, purchasing, and business processes more effectively.</p>
+          </article>
+          <article class="industry-card reveal reveal-d2">
+            <div class="industry-num">04</div>
+            <h3>Import &amp; Export</h3>
+            <p>Gain visibility across suppliers, inventory, orders, logistics, and business operations.</p>
+          </article>
+          <article class="industry-card reveal reveal-d2">
+            <div class="industry-num">05</div>
+            <h3>Logistics</h3>
+            <p>Support operational coordination, workflow visibility, and process efficiency.</p>
+          </article>
+          <article class="industry-card reveal reveal-d3">
+            <div class="industry-num">06</div>
+            <h3>Professional Services</h3>
+            <p>Enable digital transformation through intelligent systems and modern business technologies.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="innovation">
+      <div class="container">
+        <div class="innovation-split">
+          <div class="reveal">
+            <div class="section-label">Innovation</div>
+            <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:800;letter-spacing:-0.03em;line-height:1.12;margin:0 0 1rem;">Building For The Next Decade</h2>
+            <div class="prose">
+              <p>Technology continues to evolve. Business challenges continue to evolve. Organizations require solutions that are capable of adapting to an increasingly connected and intelligent world.</p>
+              <p><strong style="color:var(--ink);">Our goal is simple:</strong> build technology that helps organizations succeed in the future—not just today.</p>
+            </div>
+          </div>
+          <div class="reveal reveal-d1">
+            <p style="margin:0 0 0.5rem;font-weight:600;color:var(--ink-soft);">YNIIDI invests in innovation across:</p>
+            <div class="tag-grid">
+              <span>Artificial Intelligence</span>
+              <span>Business Intelligence</span>
+              <span>Process Automation</span>
+              <span>Enterprise Platforms</span>
+              <span>Data Systems</span>
+              <span>Decision Intelligence</span>
+              <span>Digital Transformation Technologies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-muted" id="vision">
+      <div class="container">
+        <div class="vision-panel reveal">
+          <div class="section-label" style="color:#93c5fd;">Vision</div>
+          <h2>A Future Powered By Intelligent Technology</h2>
+          <p>We envision a world where every organization can leverage technology to operate with greater visibility, agility, and confidence.</p>
+          <p>Our ambition is to build a global ecosystem of software products, intelligent platforms, and enterprise technologies that empower organizations across industries.</p>
+          <p>We are not simply building software. We are building the foundation for the next generation of business technology.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="founder">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">Founder</div>
+          <h2>From The Founder</h2>
+        </div>
+        <div class="founder-quote reveal">
+          <blockquote>
+            <p>YNIIDI was founded on a simple belief: technology should help organizations focus on growth instead of complexity.</p>
+            <p>After observing how fragmented systems, disconnected workflows, and inefficient processes limit business potential, we set out to build technologies that simplify operations and empower better decision-making.</p>
+            <p>BOOM is the first chapter of that journey. The vision extends far beyond a single product. Our goal is to create an ecosystem of technologies that help organizations operate smarter, innovate faster, and grow with confidence.</p>
+          </blockquote>
+          <div class="founder-signature">
+            <strong>Shyaam Niranjan</strong>
+            <span>Founder, YNIIDI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <h2>Let's Build What's Next</h2>
+          <p>Whether you're exploring business software, seeking a custom enterprise solution, or looking to transform your operations through technology, YNIIDI is ready to help.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="products/">Explore Products</a>
+            <a class="btn btn-ghost" href="contact/">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -1439,79 +363,15 @@
         <span>Building software for modern business operations.</span>
       </div>
       <nav class="footer-nav" aria-label="Footer">
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="./">Home</a>
+        <a href="products/">Products</a>
+        <a href="about/">About</a>
+        <a href="contact/">Contact</a>
         <a href="https://boom.yniidi.com/" target="_blank" rel="noopener noreferrer">BOOM</a>
       </nav>
     </div>
   </footer>
 
-  <script>
-    const header = document.getElementById("site-header");
-    const menuButton = document.querySelector("[data-menu-button]");
-    const navLinks = document.getElementById("site-nav");
-
-    const onScroll = () => {
-      header.classList.toggle("scrolled", window.scrollY > 40);
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-
-    if (menuButton && navLinks) {
-      menuButton.addEventListener("click", () => {
-        const open = navLinks.classList.toggle("open");
-        menuButton.classList.toggle("open", open);
-        menuButton.setAttribute("aria-expanded", open ? "true" : "false");
-      });
-      navLinks.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-          navLinks.classList.remove("open");
-          menuButton.classList.remove("open");
-          menuButton.setAttribute("aria-expanded", "false");
-        });
-      });
-    }
-
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add("visible");
-      });
-    }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
-
-    document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
-
-    const navAnchors = [...document.querySelectorAll(".nav-links a:not(.nav-cta)")];
-    const tracked = ["home", "products", "about", "contact"];
-
-    const setActiveNav = (id) => {
-      navAnchors.forEach((link) => {
-        const active = link.getAttribute("href") === `#${id}`;
-        link.classList.toggle("active", active);
-        if (active) link.setAttribute("aria-current", "page");
-        else link.removeAttribute("aria-current");
-      });
-    };
-
-    const activeObserver = new IntersectionObserver((entries) => {
-      const visible = entries
-        .filter((e) => e.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (!visible) return;
-      const id = visible.target.id;
-      if (tracked.includes(id)) setActiveNav(id);
-      else if (["introduction", "why-yniidi", "industries", "vision", "values"].includes(id)) {
-        if (id === "introduction") setActiveNav("home");
-        else if (id === "why-yniidi" || id === "industries") setActiveNav("products");
-        else setActiveNav("about");
-      }
-    }, { rootMargin: "-35% 0px -50% 0px", threshold: [0.15, 0.4] });
-
-    [...tracked, "introduction", "why-yniidi", "industries", "vision", "values", "founder"].forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) activeObserver.observe(el);
-    });
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
