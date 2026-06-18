@@ -1069,36 +1069,6 @@ body[data-page="thank-you"] main.thank-you-main {
   margin-inline: auto;
   text-align: center;
 }
-.thank-you-check {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: rgba(16, 185, 129, 0.12);
-  border: 2px solid rgba(16, 185, 129, 0.35);
-  display: grid;
-  place-items: center;
-  margin: 0 auto 1.1rem;
-  animation: thankYouPop 0.55s ease-out;
-}
-.thank-you-check svg {
-  width: 30px;
-  height: 30px;
-  stroke: var(--success);
-  stroke-width: 2.75;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 48;
-  stroke-dashoffset: 48;
-  animation: thankYouDraw 0.45s ease-out 0.3s forwards;
-}
-@keyframes thankYouPop {
-  from { transform: scale(0.55); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
-@keyframes thankYouDraw {
-  to { stroke-dashoffset: 0; }
-}
 .thank-you-eyebrow {
   margin: 0 0 0.65rem;
   font-size: 0.72rem;
