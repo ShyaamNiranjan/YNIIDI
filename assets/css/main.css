@@ -94,7 +94,7 @@ button { font: inherit; cursor: pointer; }
 }
 .brand-mark-img {
   display: block;
-  height: 56px;
+  height: 42px;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
@@ -1053,7 +1053,7 @@ section { padding: 5.5rem 0; }
     padding-inline: var(--gutter);
   }
   .brand { margin-left: 0; }
-  .brand-mark-img { height: 47px; }
+  .brand-mark-img { height: 35px; }
   .brand-name { font-size: 2rem; letter-spacing: 0.12em; }
   .nav { min-height: 96px; }
   .menu-button { display: inline-flex; }
