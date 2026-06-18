@@ -48,6 +48,7 @@
       else if (page === "solutions") active = normalized === "solutions" || href === "./";
       else if (page === "industries") active = normalized === "industries" || href === "./";
       else if (page === "innovation") active = normalized === "innovation" || href === "./";
+      else if (page === "resources") active = normalized === "resources" || href === "./";
       else if (page === "about") active = normalized === "about" || href === "./";
       else if (page === "vision") active = normalized === "vision" || href === "./";
       else if (page === "contact") active = normalized === "contact" || href === "./";
