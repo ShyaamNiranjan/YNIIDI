@@ -173,9 +173,12 @@
               <p>Your inquiry has been received. Our team will review your message and respond as quickly as possible.</p>
             </div>
             <form class="contact-form" id="yniidi-contact-form" action="https://formsubmit.co/yniidiproducts@gmail.com" method="POST">
-              <input type="hidden" name="_subject" value="New YNIIDI Contact Inquiry">
+              <input type="hidden" name="_subject" id="form-email-subject" value="New YNIIDI Contact Inquiry">
+              <input type="hidden" name="_replyto" id="form-replyto" value="">
+              <input type="hidden" name="_next" id="form-next" value="">
+              <input type="hidden" name="_template" value="table">
               <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="https://shyaamniranjan.github.io/YNIIDI/contact/?sent=1">
+              <input type="hidden" name="_autoresponse" value="Thank you for contacting YNIIDI. We received your inquiry and will respond as quickly as possible.">
               <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
               <div class="form-row">
                 <label for="name">Full Name</label>
