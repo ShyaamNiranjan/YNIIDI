@@ -46,6 +46,7 @@
       if (page === "home") active = href === "./" || href === "../" || href === "/" || normalized === "";
       else if (page === "products") active = normalized === "products" || href === "./";
       else if (page === "solutions") active = normalized === "solutions" || href === "./";
+      else if (page === "industries") active = normalized === "industries" || href === "./";
       else if (page === "about") active = normalized === "about" || href === "./";
       else if (page === "contact") active = normalized === "contact" || href === "./";
       link.classList.toggle("active", active);
