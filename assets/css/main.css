@@ -1046,34 +1046,43 @@ section { padding: 5.5rem 0; }
 .footer-legal a:hover, .footer-legal a[aria-current="page"] { color: var(--ink); }
 .footer-legal span { color: var(--line); }
 
-/* Thank you page */
-.thank-you-hero {
-  position: relative;
-  padding: 8.5rem 0 4.5rem;
+/* Thank you page — single screen, footer below fold */
+body[data-page="thank-you"] {
   background: var(--hero);
+}
+body[data-page="thank-you"] main.thank-you-main {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
-.thank-you-hero-inner {
+.thank-you-screen {
+  position: relative;
+  width: 100%;
+  padding: 0 var(--gutter);
+}
+.thank-you-screen-inner {
   position: relative;
   z-index: 2;
-  max-width: 46rem;
-  text-align: center;
+  max-width: 32rem;
   margin-inline: auto;
+  text-align: center;
 }
 .thank-you-check {
-  width: 76px;
-  height: 76px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: rgba(16, 185, 129, 0.12);
   border: 2px solid rgba(16, 185, 129, 0.35);
   display: grid;
   place-items: center;
-  margin: 0 auto 1.75rem;
+  margin: 0 auto 1.1rem;
   animation: thankYouPop 0.55s ease-out;
 }
 .thank-you-check svg {
-  width: 38px;
-  height: 38px;
+  width: 30px;
+  height: 30px;
   stroke: var(--success);
   stroke-width: 2.75;
   fill: none;
@@ -1091,140 +1100,58 @@ section { padding: 5.5rem 0; }
   to { stroke-dashoffset: 0; }
 }
 .thank-you-eyebrow {
-  margin: 0 0 0.35rem;
-  font-size: 0.78rem;
+  margin: 0 0 0.65rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.45);
 }
-.thank-you-kicker {
-  margin: 0 0 1rem;
-  font-size: 0.92rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #93c5fd;
-}
-.thank-you-hero h1 {
-  margin: 0 0 1.25rem;
+.thank-you-screen h1 {
+  margin: 0 0 0.85rem;
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-size: clamp(1.65rem, 4vw, 2.25rem);
   font-weight: 800;
   letter-spacing: -0.03em;
-  line-height: 1.08;
+  line-height: 1.1;
   color: #fff;
 }
-.thank-you-lead {
-  margin: 0 0 1rem;
-  font-size: 1.05rem;
-  line-height: 1.75;
-  color: rgba(255,255,255,0.62);
-}
-.thank-you-lead:last-of-type { margin-bottom: 0; }
-.section-intro {
-  margin: 0.75rem auto 0;
-  max-width: 42rem;
-  color: var(--muted);
-  line-height: 1.7;
-}
-.thank-you-steps {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-}
-.thank-you-step {
-  padding: 1.75rem;
-  border-radius: var(--radius);
-  background: var(--bg-elevated);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-}
-.thank-you-step-num {
-  display: block;
-  margin-bottom: 0.85rem;
-  font-family: var(--font-display);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  color: var(--accent);
-}
-.thank-you-step h3 {
-  margin: 0 0 0.65rem;
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 700;
-}
-.thank-you-step p {
+.thank-you-message {
   margin: 0;
-  color: var(--muted);
-  line-height: 1.65;
   font-size: 0.95rem;
-}
-.thank-you-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-  height: 100%;
-}
-.thank-you-card h3 {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: 1.12rem;
-  font-weight: 700;
-}
-.thank-you-card p {
-  margin: 0;
-  flex: 1;
-  color: var(--muted);
   line-height: 1.65;
+  color: rgba(255,255,255,0.58);
 }
-.thank-you-card .btn { align-self: flex-start; margin-top: 0.25rem; }
-.thank-you-closing {
-  padding: 3.5rem;
-  border-radius: var(--radius-lg);
-  background: var(--bg-elevated);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  text-align: center;
+.thank-you-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem;
+  margin: 1.15rem 0 1.35rem;
+  padding: 0;
+  list-style: none;
 }
-.thank-you-closing h2 {
-  margin: 0 0 1.25rem;
-  font-family: var(--font-display);
-  font-size: clamp(1.7rem, 3vw, 2.25rem);
-  font-weight: 800;
-  letter-spacing: -0.03em;
+.thank-you-pills li {
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.6);
 }
-.thank-you-closing .prose {
-  max-width: 40rem;
-  margin: 0 auto 2rem;
-  text-align: center;
+.thank-you-pills strong {
+  color: #fff;
+  font-weight: 600;
 }
-.thank-you-closing .prose p {
-  margin: 0 0 0.85rem;
-  color: var(--muted);
-  line-height: 1.7;
+.thank-you-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
 }
-.thank-you-closing .prose p:last-child { margin-bottom: 0; }
-.thank-you-brand-block {
-  display: grid;
-  gap: 0.35rem;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  border-radius: var(--radius);
-  background: var(--bg-muted);
-  border: 1px solid var(--line);
-}
-.thank-you-brand-block strong {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-}
-.thank-you-brand-block span {
-  color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.55;
+.thank-you-actions .btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.88rem;
 }
 
 /* Tablet & below — mobile navigation */
@@ -1305,7 +1232,6 @@ section { padding: 5.5rem 0; }
   .flow-chain { padding: 1.5rem; }
   .hero h1 { font-size: clamp(2rem, 9vw, 2.75rem); }
   .hero-actions .btn { width: 100%; }
-  .thank-you-steps { grid-template-columns: 1fr; }
-  .thank-you-hero { padding: 7rem 0 3.5rem; }
-  .thank-you-closing { padding: 2rem 1.5rem; }
+  .thank-you-screen { padding-top: 5.5rem; }
+  .thank-you-actions .btn { width: 100%; }
 }
