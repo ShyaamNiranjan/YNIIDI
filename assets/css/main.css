@@ -80,13 +80,14 @@ button { font: inherit; cursor: pointer; }
   gap: 1rem;
   min-height: 112px;
 }
-.brand { display: flex; align-items: center; gap: 0.45rem; min-width: 0; flex-shrink: 0; }
+.brand { display: flex; align-items: center; gap: 0.15rem; min-width: 0; flex-shrink: 0; }
 .brand-mark-img {
   display: block;
   height: 94px;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
+  margin-right: -0.15rem;
 }
 .brand-name {
   display: block;
