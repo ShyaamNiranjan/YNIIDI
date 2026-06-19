@@ -4,5 +4,5 @@
 
 YNIIDI develops business software, intelligent platforms, AI solutions, and enterprise technologies.
 
-- Home: https://shyaamniranjan.github.io/YNIIDI/
+- Home: https://yniidi.com/
 - BOOM: https://boom.yniidi.com/
