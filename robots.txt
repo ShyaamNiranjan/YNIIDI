@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shyaamniranjan.github.io/YNIIDI/sitemap.xml
+Sitemap: https://yniidi.com/sitemap.xml
