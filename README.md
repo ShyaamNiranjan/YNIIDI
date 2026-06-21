@@ -16,5 +16,3 @@ Technology products and custom software solutions.
 | Privacy Policy | `/privacy-policy/` |
 | Terms of Service | `/terms-of-service/` |
 | Thank You | `/thank-you/` (post-form, noindex) |
-
-Legacy URLs (`/solutions/`, `/industries/`, `/innovation/`, `/vision/`, `/resources/`) redirect to the new structure.
