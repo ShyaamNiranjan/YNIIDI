@@ -2,7 +2,7 @@
   const header = document.getElementById("site-header");
   const menuButton = document.querySelector("[data-menu-button]");
   const navLinks = document.getElementById("site-nav");
-  const hero = document.querySelector(".hero");
+  const hero = document.querySelector(".hero, .page-hero");
   const markImg = document.querySelector(".brand-mark-img");
   const markLight = markImg?.getAttribute("src") || "";
   const markDark = markLight.replace("yniidi-mark.png", "yniidi-mark-dark.png");
