@@ -49,10 +49,10 @@
       const href = link.getAttribute("href") || "";
       const normalized = href.replace(/^\.\//, "").replace(/^\.\.\//, "").replace(/\/$/, "");
       let active = false;
-      if (page === "home") active = href === "./" || href === "../" || href === "/" || normalized === "";
-      else if (page === "products") active = normalized === "products" || href === "./";
-      else if (page === "about") active = normalized === "about" || href === "./";
-      else if (page === "contact") active = normalized === "contact" || href === "./";
+      if (page === "home") active = href === "/" || href === "./" || href === "../" || normalized === "" || normalized === "/";
+      else if (page === "products") active = normalized === "products" || href === "./" || href === "/products/";
+      else if (page === "about") active = normalized === "about" || href === "./" || href === "/about/";
+      else if (page === "contact") active = normalized === "contact" || href === "./" || href === "/contact/";
       link.classList.toggle("active", active);
       if (active) link.setAttribute("aria-current", "page");
       else link.removeAttribute("aria-current");
