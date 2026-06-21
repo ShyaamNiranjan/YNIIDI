@@ -1046,7 +1046,66 @@ section { padding: 5.5rem 0; }
 .footer-legal a:hover, .footer-legal a[aria-current="page"] { color: var(--ink); }
 .footer-legal span { color: var(--line); }
 
-/* Thank you page */
+.geo-block {
+  padding: 2rem 2.25rem;
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  max-width: 48rem;
+}
+.geo-block h2 {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.5vw, 1.65rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.geo-block p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+  font-size: 1.02rem;
+}
+.geo-block strong { color: var(--ink-soft); }
+.highlight-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.25rem;
+}
+.highlight-pill {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+.faq-list { display: grid; gap: 0.75rem; max-width: 44rem; }
+.faq-item {
+  padding: 1.1rem 1.25rem;
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+}
+.faq-item summary {
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--ink-soft);
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item p {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+.faq-item a { color: var(--accent); font-weight: 600; }
+
 .thank-you-kicker {
   margin: -0.75rem 0 1.25rem;
   font-size: 0.92rem;
