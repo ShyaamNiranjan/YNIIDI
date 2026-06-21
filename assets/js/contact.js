@@ -9,11 +9,7 @@
   const topicSelect = document.getElementById("subject");
   const submitButton = form.querySelector('button[type="submit"]');
 
-  const getThankYouUrl = () => {
-    const path = window.location.pathname.replace(/\/contact\/?.*$/, "");
-    const root = path.endsWith("/") ? path : `${path}/`;
-    return `${window.location.origin}${root}thank-you/`;
-  };
+  const getThankYouUrl = () => "https://yniidi.com/thank-you/";
 
   if (nextInput) {
     nextInput.value = getThankYouUrl();

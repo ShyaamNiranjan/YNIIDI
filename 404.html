@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | YNIIDI</title>
+  <script>
+    (function () {
+      var pages = ["about", "products", "contact", "privacy-policy", "terms-of-service", "thank-you"];
+      var path = window.location.pathname.replace(/\/+$/, "");
+      var segments = path.split("/").filter(Boolean);
+      if (segments.length >= 2) {
+        var last = segments[segments.length - 1];
+        if (pages.indexOf(last) !== -1) {
+          window.location.replace("https://yniidi.com/" + last + "/");
+          return;
+        }
+      }
+      window.location.replace("https://yniidi.com/");
+    })();
+  </script>
+  <meta http-equiv="refresh" content="0; url=https://yniidi.com/">
+</head>
+<body></body>
+</html>

@@ -606,6 +606,7 @@ section { padding: 5.5rem 0; }
   letter-spacing: 0.05em; text-transform: uppercase;
 }
 
+.product-block-body {
   padding: 0 2rem 2rem;
 }
 .product-block-visual img {
