@@ -1048,14 +1048,16 @@ section { padding: 5.5rem 0; }
 .footer-legal a { color: var(--muted); transition: color 0.2s; }
 .footer-legal a:hover, .footer-legal a[aria-current="page"] { color: var(--ink); }
 .footer-legal span { color: var(--line); }
-.footer-copyright {
-  margin-top: 1rem;
-  padding-top: 1rem;
+.site-footer .footer-copyright {
+  display: block;
+  width: 100%;
+  margin: 1.25rem 0 0;
+  padding: 1.15rem var(--gutter) 1.25rem;
+  border-top: 1px solid var(--line);
   text-align: center;
-}
-.footer-copyright p {
-  margin: 0;
-  font-size: 0.86rem;
+  font-size: 0.84rem;
+  font-weight: 400;
+  line-height: 1.5;
   color: var(--muted);
 }
 
