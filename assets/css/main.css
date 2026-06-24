@@ -396,7 +396,9 @@ section { padding: 5.5rem 0; }
 .vision-panel::before {
   content: ""; position: absolute; inset: 0;
   background: radial-gradient(ellipse 60% 80% at 100% 0%, rgba(99,102,241,0.22), transparent);
+  pointer-events: none;
 }
+.vision-panel > * { position: relative; z-index: 1; }
 .vision-panel h2 {
   position: relative; margin: 0 0 1.25rem; font-family: var(--font-display);
   font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 800;
