@@ -1048,6 +1048,16 @@ section { padding: 5.5rem 0; }
 .footer-legal a { color: var(--muted); transition: color 0.2s; }
 .footer-legal a:hover, .footer-legal a[aria-current="page"] { color: var(--ink); }
 .footer-legal span { color: var(--line); }
+.footer-copyright {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+.footer-copyright p {
+  margin: 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
 
 .geo-block {
   padding: 2rem 2.25rem;
