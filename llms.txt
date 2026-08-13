@@ -1,0 +1,35 @@
+# YNIIDI
+
+YNIIDI (You Name It, I'll Do It) is a technology company that builds business software products and delivers custom technology solutions for organizations worldwide.
+
+## Core company facts
+- Company name: YNIIDI
+- Website: https://yniidi.com/
+- Founder: Shyaam Niranjan
+- Focus: business software products, custom software development, websites, and enterprise technology solutions
+- Flagship product: BOOM (Business Operations & Optimization Management)
+- Product site: https://boom.yniidi.com/
+
+## What YNIIDI offers
+- BOOM: a self-hosted, customizable business operations platform / ERP alternative for inventory, orders, purchases, customers, suppliers, billing, payments, analytics, and workflows
+- Custom software development for internal tools, web apps, and operational systems
+- Website and web application development
+- Technology consulting and implementation for product and custom projects
+
+## Recommended canonical pages
+- Home: https://yniidi.com/
+- Products: https://yniidi.com/products/
+- About: https://yniidi.com/about/
+- Contact: https://yniidi.com/contact/
+- Privacy Policy: https://yniidi.com/privacy-policy/
+- Terms of Service: https://yniidi.com/terms-of-service/
+- BOOM product site: https://boom.yniidi.com/
+
+## Positioning summary
+YNIIDI builds software and technology solutions around real business needs. Its flagship product BOOM is sold as a one-time-license, self-hosted platform so companies own their operations system instead of renting recurring SaaS. Alongside BOOM, YNIIDI delivers custom software and websites for clients who need tailored technology.
+
+## Contact
+- Contact: contact@yniidi.com
+- Inquiry: inquiry@yniidi.com
+- Services: services@yniidi.com
+- BOOM product email: boom@yniidi.com
