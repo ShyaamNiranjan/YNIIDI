@@ -120,8 +120,16 @@
                 <input type="text" id="organization" name="organization" autocomplete="organization" placeholder="Company or organization (optional)">
               </div>
               <div class="form-row">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@company.com">
+                <label for="preferred-medium">Preferred medium of contact</label>
+                <select id="preferred-medium" name="preferred_medium" required>
+                  <option value="" disabled selected>Select preferred contact method</option>
+                  <option value="E-Mail">E-Mail</option>
+                  <option value="WhatsApp">WhatsApp</option>
+                </select>
+              </div>
+              <div class="form-row form-row-contact-detail is-hidden" id="contact-detail-row">
+                <label for="contact-detail" id="contact-detail-label">Email</label>
+                <input type="email" id="contact-detail" name="email" autocomplete="email" placeholder="you@company.com">
               </div>
               <div class="form-row">
                 <label for="subject">Inquiry Type</label>
