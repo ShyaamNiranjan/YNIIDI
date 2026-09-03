@@ -4,8 +4,8 @@
   <base href="https://yniidi.com/">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact YNIIDI | Products, Custom Software &amp; Project Inquiries</title>
-  <meta name="description" content="Contact YNIIDI about BOOM, custom software, websites, or any technology project. Email contact@yniidi.com or use our inquiry form.">
+  <title>Contact YNIIDI &mdash; Product Licensing &amp; Custom Builds</title>
+  <meta name="description" content="Talk to YNIIDI about licensing a product or scoping a custom system. Product enquiries, services, and general contact &mdash; one form, one team, straight answers.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Shyaam Niranjan">
   <meta name="theme-color" content="#050a12">
@@ -14,7 +14,7 @@
   <link rel="apple-touch-icon" href="https://yniidi.com/assets/apple-touch-icon.png">
   <link rel="canonical" href="https://yniidi.com/contact/">
   <meta property="og:title" content="Contact YNIIDI">
-  <meta property="og:description" content="Get in touch about BOOM, custom software, websites, or any technology project.">
+  <meta property="og:description" content="Product licensing or custom builds. Tell us what you&rsquo;re trying to build or fix.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yniidi.com/contact/">
   <meta property="og:site_name" content="YNIIDI">
@@ -33,12 +33,11 @@
       "@type": "Organization",
       "@id": "https://yniidi.com/#organization",
       "email": "contact@yniidi.com",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer support",
-        "email": "contact@yniidi.com",
-        "availableLanguage": "English"
-      }
+      "contactPoint": [
+        { "@type": "ContactPoint", "contactType": "customer support", "email": "contact@yniidi.com", "availableLanguage": "English" },
+        { "@type": "ContactPoint", "contactType": "sales", "email": "inquiry@yniidi.com", "availableLanguage": "English" },
+        { "@type": "ContactPoint", "contactType": "customer service", "email": "services@yniidi.com", "availableLanguage": "English" }
+      ]
     }
   }
   </script>
@@ -56,6 +55,7 @@
       <nav class="nav-links" id="site-nav" aria-label="Primary">
         <a href="https://yniidi.com/">Home</a>
         <a href="https://yniidi.com/products/">Products</a>
+        <a href="https://yniidi.com/services/">Services</a>
         <a href="https://yniidi.com/about/">About</a>
         <a href="https://yniidi.com/contact/" class="nav-cta">Contact Us</a>
       </nav>
@@ -67,11 +67,11 @@
       <div class="hero-bg"><div class="hero-grid-lines"></div></div>
       <div class="container page-hero-inner reveal">
         <p class="hero-label">Contact</p>
-        <h1>Let's Build Something Together</h1>
-        <p class="hero-lead">Questions about BOOM? Need a website, custom software, or a full technology project? Tell us what you need — we build across any field.</p>
+        <h1>Tell us what you&rsquo;re trying to build or fix.</h1>
+        <p class="hero-lead">Whether you&rsquo;re looking at one of our licensed products or a system built from scratch, start here. We read every message ourselves and reply with a real answer &mdash; including when the answer is that you don&rsquo;t need us.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://yniidi.com/contact/#contact-form">Send An Inquiry</a>
-          <a class="btn btn-ghost" href="https://yniidi.com/products/">View Products</a>
+          <a class="btn btn-primary" href="https://yniidi.com/contact/#contact-form">Send an inquiry</a>
+          <a class="btn btn-ghost" href="https://yniidi.com/services/">View Services</a>
         </div>
       </div>
     </section>
@@ -80,24 +80,24 @@
       <div class="container">
         <div class="contact-form-layout reveal">
           <div class="contact-form-intro">
-            <div class="section-label">Get In Touch</div>
-            <h2>Start The Conversation</h2>
-            <p>We review every inquiry and respond as quickly as possible.</p>
+            <div class="section-label">Direct Channels</div>
+            <h2>Send us the details</h2>
+            <p>The more you tell us about how the operation runs today &mdash; the workflow, the bottleneck, the tools you&rsquo;re currently paying for &mdash; the more useful our first reply will be. Typical response time is one business day.</p>
             <div class="connect-channels">
               <div class="connect-channel">
-                <strong>Contact</strong>
+                <strong>General enquiries</strong>
                 <a href="mailto:contact@yniidi.com">contact@yniidi.com</a>
               </div>
               <div class="connect-channel">
-                <strong>Inquiry</strong>
+                <strong>Product licensing</strong>
                 <a href="mailto:inquiry@yniidi.com">inquiry@yniidi.com</a>
               </div>
               <div class="connect-channel">
-                <strong>Services</strong>
+                <strong>Custom projects</strong>
                 <a href="mailto:services@yniidi.com">services@yniidi.com</a>
               </div>
               <div class="connect-channel">
-                <strong>BOOM Product</strong>
+                <strong>BOOM product site</strong>
                 <a href="https://boom.yniidi.com/" target="_blank" rel="noopener noreferrer">boom.yniidi.com</a>
               </div>
             </div>
@@ -135,16 +135,16 @@
                 <label for="subject">Inquiry Type</label>
                 <select id="subject" name="subject" required>
                   <option value="" disabled selected>Select a topic</option>
+                  <option value="Product Licensing">Product Licensing</option>
+                  <option value="Custom Project">Custom Project</option>
                   <option value="BOOM Product">BOOM Product</option>
-                  <option value="Custom Software">Custom Software</option>
-                  <option value="Website or Web App">Website or Web App</option>
                   <option value="Partnership">Partnership</option>
                   <option value="General Inquiry">General Inquiry</option>
                 </select>
               </div>
               <div class="form-row">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="6" required placeholder="Describe your project, question, or requirements..."></textarea>
+                <textarea id="message" name="message" rows="6" required placeholder="How the operation runs today, what&rsquo;s breaking, and what you want to own at the end..."></textarea>
               </div>
               <button class="btn btn-primary" type="submit">Submit Inquiry</button>
             </form>
@@ -157,20 +157,20 @@
       <div class="container">
         <div class="section-head reveal">
           <div class="section-label">How We Can Help</div>
-          <h2>Common Reasons To Reach Out</h2>
+          <h2>Common reasons to reach out</h2>
         </div>
         <div class="grid-3">
           <article class="card reveal">
-            <h3>BOOM Platform</h3>
-            <p>Self-hosted operations software — demos, deployment questions, customization.</p>
+            <h3>Product licensing</h3>
+            <p>Pricing, demos and deployment for YNIIDI licensed products &mdash; starting with BOOM.</p>
           </article>
           <article class="card reveal reveal-d1">
-            <h3>Custom Development</h3>
-            <p>Websites, web apps, internal tools, and bespoke software for any use case.</p>
+            <h3>Custom projects</h3>
+            <p>Software shaped to your workflows &mdash; apps, SaaS, mobile, web, integrations.</p>
           </article>
           <article class="card reveal reveal-d2">
             <h3>Partnerships</h3>
-            <p>Technology partnerships, integrations, and collaborative projects.</p>
+            <p>Technology partnerships, integrations, and collaborative builds.</p>
           </article>
         </div>
       </div>
@@ -179,10 +179,14 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-brand"><strong>YNIIDI</strong><span>Products and custom technology solutions.</span></div>
+      <div class="footer-brand">
+        <strong>YNIIDI</strong>
+        <span>Software &amp; systems built to be owned &mdash; not rented.</span>
+      </div>
       <nav class="footer-nav" aria-label="Footer">
         <a href="https://yniidi.com/">Home</a>
         <a href="https://yniidi.com/products/">Products</a>
+        <a href="https://yniidi.com/services/">Services</a>
         <a href="https://yniidi.com/about/">About</a>
         <a href="https://yniidi.com/contact/">Contact</a>
         <a href="https://boom.yniidi.com/" target="_blank" rel="noopener noreferrer">BOOM</a>
