@@ -1113,6 +1113,18 @@ section { padding: 5.5rem 0; }
   padding: clamp(1.5rem, 3vw, 2.5rem);
 }
 .product-sheet-head { margin-bottom: 1.75rem; }
+.product-sheet-media {
+  margin: 0 0 1.75rem;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #0b1220;
+}
+.product-sheet-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .product-sheet-head h2 {
   margin: 0.65rem 0 0.35rem;
   font-family: var(--font-display);
