@@ -1147,6 +1147,26 @@ section { padding: 5.5rem 0; }
   color: var(--muted);
   line-height: 1.7;
 }
+.product-sheet-resources {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.product-sheet-resources h3 { margin: 0 0 0.75rem; }
+.product-sheet-resources ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.45rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.product-sheet-resources a {
+  color: var(--accent);
+  font-weight: 600;
+}
+.product-sheet-resources a:hover { text-decoration: underline; }
+
 .product-sheet-actions {
   display: flex;
   flex-wrap: wrap;
