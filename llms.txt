@@ -1,19 +1,18 @@
 # YNIIDI
 
-YNIIDI is a software and systems company built on one principle: businesses should own the software they run on, not rent it indefinitely. We operate two equal lines of work. First, licensed products we design and own — currently BOOM, an operating system for trading and distribution businesses covering orders, inventory, purchases, payments, dues and live profit (details at boom.yniidi.com); more products are in development. Second, custom software services — bespoke applications, SaaS platforms, mobile and web systems, integrations, automation, product extensions and technology consulting, each built around a client's specific workflow and handed over for the client to own outright, including code and data. Engagements are scoped with defined deliverables rather than open-ended retainers. Custom work is a first-class offering at YNIIDI, not a fallback when a product doesn't fit.
+YNIIDI is a software and systems company. We ship products under our own name and build custom systems for clients. Two products are public today: BOOM (a one-time license, self-hosted business operations platform for trading and distribution) and Scrollwalk (SaaS listing software that turns a phone walkthrough video into a scroll-controlled real estate listing page). Custom work remains a first-class offering — bespoke applications, SaaS platforms, mobile and web systems, integrations and consulting — scoped with defined deliverables and handed over for the client to own.
 
 ## Core company facts
 - Company name: YNIIDI
 - Website: https://yniidi.com/
 - Founder: Shyaam Niranjan
-- Focus: licensed software products and custom software/systems development
-- Current licensed product: BOOM (Business Operations & Optimization Management)
-- Product site: https://boom.yniidi.com/
+- Focus: software products and custom software/systems development
+- Products: BOOM (https://boom.yniidi.com/), Scrollwalk (https://scrollwalk.com/)
 
 ## What YNIIDI offers
 ### Products
-- BOOM: licensed, self-hosted business operations platform for trading and distribution
-- Additional YNIIDI products in development
+- BOOM: one-time license, self-hosted business operations platform for trading and distribution (orders, inventory, purchases, payments, dues, profit)
+- Scrollwalk: SaaS for real estate agents — phone walkthrough to scroll-controlled listing page with enquiries; pre-launch from 23 October 2026
 
 ### Services
 - Custom software development
@@ -34,12 +33,14 @@ YNIIDI is a software and systems company built on one principle: businesses shou
 - Privacy Policy: https://yniidi.com/privacy-policy/
 - Terms of Service: https://yniidi.com/terms-of-service/
 - BOOM product site: https://boom.yniidi.com/
+- Scrollwalk product site: https://scrollwalk.com/
 
 ## Positioning summary
-Own — not rent. YNIIDI licenses products companies own, and builds custom systems companies keep. BOOM product detail and demos live on boom.yniidi.com. YNIIDI.com is the parent company site for products and services.
+YNIIDI builds software for real operations. BOOM is owned infrastructure (one-time license, self-hosted). Scrollwalk is a shared SaaS platform for agents. Custom systems are built around a client's workflow and handed over. Product detail lives on boom.yniidi.com and scrollwalk.com; yniidi.com is the parent company site.
 
 ## Contact
 - Contact: contact@yniidi.com
 - Inquiry (product licensing): inquiry@yniidi.com
 - Services (custom projects): services@yniidi.com
 - BOOM product email: boom@yniidi.com
+- Scrollwalk: contact@scrollwalk.com

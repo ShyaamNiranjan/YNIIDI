@@ -4,8 +4,8 @@
   <base href="https://yniidi.com/">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Products &mdash; Licensed Software You Own | YNIIDI</title>
-  <meta name="description" content="YNIIDI&rsquo;s licensed software products, built to be owned rather than rented. BOOM is our operating system for trading and distribution businesses. More products coming.">
+  <title>Products &mdash; BOOM &amp; Scrollwalk | YNIIDI</title>
+  <meta name="description" content="YNIIDI products: BOOM, a one-time license operations platform for trading and distribution, and Scrollwalk, SaaS listing pages with scroll walkthroughs for real estate agents.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Shyaam Niranjan">
   <meta name="theme-color" content="#050a12">
@@ -13,14 +13,14 @@
   <link rel="icon" href="https://yniidi.com/assets/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="https://yniidi.com/assets/apple-touch-icon.png">
   <link rel="canonical" href="https://yniidi.com/products/">
-  <meta property="og:title" content="YNIIDI Products &mdash; Licensed Software You Own">
-  <meta property="og:description" content="Proven systems, licensed on ownership terms. Starting with BOOM &mdash; orders, inventory, payments and profit in one platform.">
+  <meta property="og:title" content="YNIIDI Products &mdash; BOOM &amp; Scrollwalk">
+  <meta property="og:description" content="Two products from YNIIDI: BOOM (one-time license, self-hosted) and Scrollwalk (SaaS for real estate listing walkthroughs).">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yniidi.com/products/">
   <meta property="og:site_name" content="YNIIDI">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="YNIIDI Products &mdash; Licensed Software You Own">
-  <meta name="twitter:description" content="Licensed products built to be owned. Starting with BOOM.">
+  <meta name="twitter:title" content="YNIIDI Products &mdash; BOOM &amp; Scrollwalk">
+  <meta name="twitter:description" content="BOOM for distribution ops you own. Scrollwalk for listings buyers walk through.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -32,18 +32,36 @@
       {
         "@type": "CollectionPage",
         "name": "YNIIDI Products",
-        "description": "Licensed software products from YNIIDI, built to be owned rather than rented.",
+        "description": "Software products from YNIIDI: BOOM (one-time license) and Scrollwalk (SaaS for real estate agents).",
         "url": "https://yniidi.com/products/",
         "isPartOf": { "@id": "https://yniidi.com/#website" }
       },
       {
         "@type": "SoftwareApplication",
+        "@id": "https://yniidi.com/products/#boom",
         "name": "BOOM",
+        "alternateName": "BOOM by YNIIDI",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web browser, self-hosted",
         "url": "https://boom.yniidi.com/",
-        "description": "Licensed operating system for trading and distribution businesses covering orders, inventory, purchases, payments, dues and live profit.",
+        "description": "Licensed operating system for trading and distribution businesses covering orders, inventory, purchases, payments, dues and live profit. One-time license, self-hosted.",
         "publisher": { "@id": "https://yniidi.com/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://yniidi.com/products/#scrollwalk",
+        "name": "Scrollwalk",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web browser",
+        "url": "https://scrollwalk.com/",
+        "description": "SaaS listing software for real estate agents. Film a phone walkthrough; Scrollwalk turns it into a scroll-controlled walkthrough on a branded listing page with enquiries built in.",
+        "publisher": { "@id": "https://yniidi.com/#organization" },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://scrollwalk.com/pricing/",
+          "priceCurrency": "USD",
+          "description": "One-off and monthly plans; pre-launch waitlist with free listings"
+        }
       }
     ]
   }
@@ -74,11 +92,11 @@
       <div class="hero-bg"><div class="hero-grid-lines"></div></div>
       <div class="container page-hero-inner reveal">
         <p class="hero-label">Products</p>
-        <h1>Licensed software you actually own.</h1>
-        <p class="hero-lead">YNIIDI products are systems we design, build and license under our own name. You get software that has already been proven in live operations &mdash; on terms that make it an asset, not a standing invoice.</p>
+        <h1>Software we build and ship.</h1>
+        <p class="hero-lead">YNIIDI products come out of real operational problems, then get hardened into something other businesses can run. Two models: a one-time license you deploy yourself, and SaaS where the job needs a shared platform.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://boom.yniidi.com/" target="_blank" rel="noopener noreferrer">Explore BOOM</a>
-          <a class="btn btn-ghost" href="https://yniidi.com/services/">Need something custom?</a>
+          <a class="btn btn-primary" href="#boom">BOOM</a>
+          <a class="btn btn-ghost" href="#scrollwalk">Scrollwalk</a>
         </div>
       </div>
     </section>
@@ -88,7 +106,7 @@
         <div class="geo-block reveal">
           <h2>A catalog built slowly, on purpose.</h2>
           <p>We don&rsquo;t ship products to fill a page. Each one comes out of a real operational problem we&rsquo;ve had to solve properly &mdash; then gets hardened until it can run somebody else&rsquo;s business without us in the room.</p>
-          <p>Every product follows the same principle: ownership-oriented licensing where the model allows it, your data in your control, and no pricing that punishes you for growing your team.</p>
+          <p>Where the product is infrastructure for a company&rsquo;s own operations, we license it for ownership. Where the product is a shared platform many agents publish into, we run it as SaaS. The craft is the same either way.</p>
         </div>
       </div>
     </section>
@@ -97,7 +115,7 @@
       <div class="container">
         <article class="product-sheet reveal">
           <header class="product-sheet-head">
-            <span class="status-badge status-active">Available now</span>
+            <span class="status-badge status-active">Available now &middot; One-time license</span>
             <h2>BOOM</h2>
             <p class="eco-subtitle">The operating system for trading &amp; distribution businesses.</p>
           </header>
@@ -110,7 +128,7 @@
               <p>BOOM runs the full commercial cycle in one system &mdash; orders, inventory, purchases, suppliers, customers, payments, outstanding dues and live profit. One source of truth, on web and mobile, so the office and the field are looking at the same numbers at the same time.</p>
               <p>It came out of a distribution business run on spreadsheets and WhatsApp threads, where nobody could answer &ldquo;what did we actually make this month&rdquo; without a week of reconciliation. BOOM is the answer to that, built into a product.</p>
               <h3>Ownership model</h3>
-              <p>BOOM is licensed, not rented indefinitely. The commercial is structured around you owning your deployment and your data &mdash; not around counting seats forever. Support and updates are things you choose to keep, not conditions of keeping the lights on.</p>
+              <p>BOOM is licensed, not rented indefinitely. One-time license, self-hosted on your server, no per-seat fees. Support and updates are things you choose to keep, not conditions of keeping the lights on.</p>
             </div>
             <div>
               <h3>Built for</h3>
@@ -149,18 +167,70 @@
       </div>
     </section>
 
-    <section id="roadmap">
+    <section id="scrollwalk">
+      <div class="container">
+        <article class="product-sheet reveal">
+          <header class="product-sheet-head">
+            <span class="status-badge status-active">Pre-launch &middot; SaaS</span>
+            <h2>Scrollwalk</h2>
+            <p class="eco-subtitle">Listing pages buyers walk through &mdash; from one phone video.</p>
+          </header>
+          <div class="product-sheet-grid">
+            <div>
+              <h3>What it is</h3>
+              <p>Scrollwalk is listing software for real estate agents, teams and owners selling their own home. You film one walkthrough of a home on your phone. Scrollwalk turns it into a scroll-controlled walkthrough on a branded listing page &mdash; with AI-drafted copy, captions, photos, floor plans, enquiries, viewing requests and WhatsApp, all under your name.</p>
+              <p>Buyers move through the home by scrolling: slowly to linger, quickly to move on, back up to look again. No 3D camera. No app for buyers. One link for Instagram, WhatsApp and the signboard.</p>
+              <h3>Delivery model</h3>
+              <p>Scrollwalk is SaaS. Agents publish into a shared platform, so listings stay live, process video and collect enquiries without each agent hosting their own stack. Plans count active listings; sold homes stay up free as a portfolio. Pre-launch access opens 23 October 2026.</p>
+            </div>
+            <div>
+              <h3>Built for</h3>
+              <ul class="check-list">
+                <li>Solo real estate agents</li>
+                <li>Teams and agencies under one brand</li>
+                <li>Owners selling privately (one-off listing)</li>
+                <li>Phone-first buyers on WhatsApp and Instagram</li>
+                <li>India (RERA fields) and USD markets first</li>
+              </ul>
+              <h3 style="margin-top:1.5rem">What changes</h3>
+              <ul class="check-list">
+                <li>A Reel becomes a page that can take the enquiry</li>
+                <li>No special 3D or 360&deg; camera required</li>
+                <li>Views turn into forms, viewings and WhatsApp leads</li>
+                <li>One link that works in bios, chats and QR codes</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-sheet-resources">
+            <h3>Go deeper</h3>
+            <ul>
+              <li><a href="https://scrollwalk.com/" target="_blank" rel="noopener">Scrollwalk home</a> &mdash; how it works, features and waitlist</li>
+              <li><a href="https://scrollwalk.com/pricing/" target="_blank" rel="noopener">Pricing</a> &mdash; one-off, individual and team plans in USD and INR</li>
+              <li><a href="https://scrollwalk.com/scrollwalk-vs-matterport/" target="_blank" rel="noopener">Scrollwalk vs Matterport</a> &mdash; scroll walkthroughs versus 3D tours</li>
+              <li><a href="https://scrollwalk.com/scrollwalk-vs-instagram-reel/" target="_blank" rel="noopener">Scrollwalk vs an Instagram Reel</a> &mdash; why the page sits next to the Reel</li>
+              <li><a href="https://scrollwalk.com/virtual-tour-with-phone/" target="_blank" rel="noopener">Virtual tour with a phone</a> &mdash; how to film a walkthrough</li>
+            </ul>
+          </div>
+          <div class="product-sheet-actions">
+            <a class="btn btn-primary" href="https://scrollwalk.com/" target="_blank" rel="noopener noreferrer">Visit Scrollwalk</a>
+            <a class="btn btn-outline" href="https://scrollwalk.com/waitlist/" target="_blank" rel="noopener noreferrer">Join the waitlist</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-muted" id="roadmap">
       <div class="container">
         <div class="section-head reveal">
           <div class="section-label">Roadmap</div>
-          <h2>More products are coming.</h2>
-          <p>BOOM is the only YNIIDI product available today. We&rsquo;d rather say that plainly than pad this page. Others are in build, and they will appear here when they are ready to run a business &mdash; not before.</p>
+          <h2>More products will follow.</h2>
+          <p>BOOM and Scrollwalk are live on this page because they are ready enough to put in front of customers. Others stay in build until they can run a business &mdash; not before.</p>
           <p style="margin-top:1rem">Want to know what&rsquo;s next? <a href="mailto:inquiry@yniidi.com">inquiry@yniidi.com</a></p>
         </div>
       </div>
     </section>
 
-    <section class="section-muted" id="custom-path">
+    <section id="custom-path">
       <div class="container">
         <div class="cta-panel reveal">
           <div class="section-label" style="color:#93c5fd;justify-content:center">If a product isn&rsquo;t the answer</div>
@@ -179,7 +249,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <strong>YNIIDI</strong>
-        <span>Software &amp; systems built to be owned &mdash; not rented.</span>
+        <span>Software &amp; systems &mdash; products we ship, systems you own.</span>
       </div>
       <nav class="footer-nav" aria-label="Footer">
         <a href="https://yniidi.com/">Home</a>
@@ -188,6 +258,7 @@
         <a href="https://yniidi.com/about/">About</a>
         <a href="https://yniidi.com/contact/">Contact</a>
         <a href="https://boom.yniidi.com/" target="_blank" rel="noopener noreferrer">BOOM</a>
+        <a href="https://scrollwalk.com/" target="_blank" rel="noopener noreferrer">Scrollwalk</a>
       </nav>
     </div>
     <div class="container footer-legal">
